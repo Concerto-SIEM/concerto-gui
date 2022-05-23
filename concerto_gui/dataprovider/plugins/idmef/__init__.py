@@ -33,7 +33,7 @@ from concerto_gui.dataprovider import DataProviderBackend, QueryResults, QueryRe
 class IDMEFResultObject(ResultObject, utils.json.JSONObject):
     def preprocess_value(self, value):
         if isinstance(value, IDMEFTime):
-            return datetime.fromtimestamp(value, utils.timeutil.tzoffset(None, value.getGmtOffset()))
+            return datetime.fromtimestamp(int(value), utils.timeutil.tzoffset(None, value.getGmtOffset()))
 
         return ResultObject.preprocess_value(self, value)
 
@@ -50,7 +50,7 @@ class IDMEFQueryResultsRow(QueryResultsRow):
 
     def preprocess_value(self, value):
         if isinstance(value, IDMEFTime):
-            return datetime.fromtimestamp(value, utils.timeutil.tzoffset(None, value.getGmtOffset()))
+            return datetime.fromtimestamp(int(value), utils.timeutil.tzoffset(None, value.getGmtOffset()))
 
         return QueryResultsRow.preprocess_value(self, value)
 

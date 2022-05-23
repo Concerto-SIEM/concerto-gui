@@ -64,7 +64,7 @@ class ConcertoJSONEncoder(json.JSONEncoder):
         elif isinstance(obj, datetime.datetime):
             return text_type(obj)
 
-        elif isinstance(obj, collections.Iterable):
+        elif isinstance(obj, collections.abs.Iterable):
             return list(obj)
 
         return json.JSONEncoder.default(self, obj)
