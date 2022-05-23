@@ -1,0 +1,3177 @@
+# Russian Translation for Prewikka
+# Copyright (C) 2022 Concerto SIEM. All Rights Reserved.
+# Author: Maxime Rebon <maxime.rebon@gmail.com>
+
+# Copyright (C) 2007-2020 CS GROUP - France
+# This file is distributed under the same license as the concerto_gui package.
+# bogdanov.valentin@gmail.com, 2007.
+#
+# Modification for Prewikka 3.0 by IS-Systems LLC
+# info@is-systems.org, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Concerto 5.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-09 12:22+0200\n"
+"PO-Revision-Date: 2018-02-09 12:07+0100\n"
+"Last-Translator: Alex Bochkin <ba@is-systems.org>\n"
+"Language-Team: Russian\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: concerto_gui/baseview.py:79 concerto_gui/usergroup.py:52
+#: concerto_gui/views/usermanagement/usermanagement.py:112
+#: concerto_gui/views/usermanagement/usermanagement.py:142
+#: concerto_gui/views/usermanagement/usermanagement.py:232
+#: concerto_gui/views/usermanagement/usermanagement.py:327
+#: concerto_gui/views/usermanagement/usermanagement.py:398
+msgid "Permission Denied"
+msgstr "Недостаточно прав"
+
+#: concerto_gui/baseview.py:79
+msgid "Missing permission to access the specified file"
+msgstr ""
+
+#: concerto_gui/config.py:37 concerto_gui/dataprovider/__init__.py:661
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:905
+msgid "Configuration error"
+msgstr "Ошибка конфигурации"
+
+#: concerto_gui/config.py:43
+#, python-format
+msgid "Parse error in \"%(txt)s\" at %(file)s line %(line)d"
+msgstr "Ошибка обработки в \"%(txt)s\" в %(file)s строка %(line)d"
+
+#: concerto_gui/config.py:48 concerto_gui/view.py:82
+#, python-format
+msgid "Invalid value '%(value)s' for parameter '%(name)s'"
+msgstr "Неверное значение '%(value)s' для параметра '%(name)s'"
+
+#: concerto_gui/config.py:54
+#, python-format
+msgid "Missing value for parameter '%(name)s'"
+msgstr "Недостающее значение для параметра '%(name)s'"
+
+#: concerto_gui/crontab.py:37
+msgid "Hourly"
+msgstr "Часовой"
+
+#: concerto_gui/crontab.py:38
+msgid "Daily"
+msgstr "Cуточный"
+
+#: concerto_gui/crontab.py:39
+msgid "Weekly"
+msgstr "Недельный"
+
+#: concerto_gui/crontab.py:40
+msgid "Monthly"
+msgstr "Месячный"
+
+#: concerto_gui/crontab.py:41
+msgid "Yearly"
+msgstr "Годовой"
+
+#: concerto_gui/crontab.py:42 concerto_gui/mainmenu.py:302
+#: concerto_gui/templates/mainmenu.mak:92
+msgid "Custom"
+msgstr "Настраиваемый"
+
+#: concerto_gui/crontab.py:43 concerto_gui/views/crontab/__init__.py:84
+msgid "Disabled"
+msgstr "Выключено"
+
+#: concerto_gui/crontab.py:113
+msgid "Scheduled job execution failed"
+msgstr ""
+
+#: concerto_gui/crontab.py:146
+#, fuzzy
+msgid "Invalid job extension"
+msgstr "Неверная сессия"
+
+#: concerto_gui/crontab.py:146
+#, python-format
+msgid "Scheduled job with invalid extension type '%s'"
+msgstr ""
+
+#: concerto_gui/crontab.py:216
+#, fuzzy
+msgid "Invalid CronJob"
+msgstr "Неверная сессия"
+
+#: concerto_gui/crontab.py:216
+#, python-format
+msgid "CronJob with id=%d cannot be found in database"
+msgstr ""
+
+#: concerto_gui/crontab.py:267
+#, fuzzy
+msgid "Invalid schedule"
+msgstr "Неверный пользователь"
+
+#: concerto_gui/crontab.py:267
+msgid "The specified job schedule is invalid"
+msgstr ""
+
+#: concerto_gui/crontab.py:298
+#, python-format
+msgid "Custom (%s)"
+msgstr "Настраиваемый (%s)"
+
+#: concerto_gui/database.py:43
+msgid "Database error"
+msgstr "Ошибка базы данных"
+
+#: concerto_gui/database.py:50
+msgid "Database schema error"
+msgstr "Ошибка схемы базы данных"
+
+#: concerto_gui/database.py:293
+msgid "database installation required"
+msgstr "Необходима установка базы данных"
+
+#: concerto_gui/database.py:296
+msgid "database activation required"
+msgstr "Требуется активация базы данных"
+
+#: concerto_gui/database.py:299
+#, python-format
+msgid "database schema branch %(required)s required (found %(current)s)"
+msgstr ""
+
+#: concerto_gui/database.py:305
+#, python-format
+msgid "database schema version %(required)s required (found %(current)s)"
+msgstr ""
+
+#: concerto_gui/database.py:372
+msgid "Database installation error"
+msgstr "Ошибка установки базы данных"
+
+#: concerto_gui/database.py:374
+#, python-format
+msgid ""
+"No database installation script found for module %(module)s, version "
+"%(version)s"
+msgstr ""
+"Не найдет скрипт установки базы данных для модуля %(module)s, version "
+"%(version)s"
+
+#: concerto_gui/database.py:382 concerto_gui/database.py:420
+msgid "Database migration error"
+msgstr "Ошибка миграции базы данных"
+
+#: concerto_gui/database.py:386
+#, fuzzy, python-format
+msgid ""
+"No database branch migration script found for module %(module)s, branch "
+"transition %(current)s -> %(required)s"
+msgstr ""
+"Не найдет скрипт установки базы данных для модуля %(module)s, version "
+"%(version)s"
+
+#: concerto_gui/database.py:424
+#, python-format
+msgid ""
+"No linear migration script found for module %(module)s %(version1)s -> "
+"%(version2)s"
+msgstr ""
+
+#: concerto_gui/database.py:841
+#, fuzzy
+msgid "Database configuration error"
+msgstr "Ошибка миграции базы данных"
+
+#: concerto_gui/database.py:841
+msgid "Only MySQL and PostgreSQL databases are supported at the moment"
+msgstr ""
+
+#: concerto_gui/error.py:48 concerto_gui/templates/error.mak:139
+msgid "An unexpected condition happened"
+msgstr ""
+
+#: concerto_gui/error.py:148
+msgid "Not implemented"
+msgstr ""
+
+#: concerto_gui/error.py:150
+msgid "Backend does not implement this operation"
+msgstr ""
+
+#: concerto_gui/history.py:32
+msgid "Search history deletion"
+msgstr ""
+
+#: concerto_gui/localization.py:143
+msgid "%m/%Y"
+msgstr "%m.%Y"
+
+#: concerto_gui/localization.py:144
+#, python-format
+msgid "%m/%d/%Y"
+msgstr "%d.%m.%Y"
+
+#: concerto_gui/localization.py:145
+#, python-format
+msgid "%m/%d/%Y %Hh"
+msgstr "%d.%m.%Y %H:00"
+
+#: concerto_gui/localization.py:146
+#, python-format
+msgid "%m/%d/%Y %H:%M"
+msgstr "%d.%m.%Y %H:%M"
+
+#: concerto_gui/localization.py:147
+#, python-format
+msgid "%m/%d/%Y %H:%M:%S"
+msgstr "%d.%m.%Y %H:%M:%S"
+
+#: concerto_gui/localization.py:149
+msgid "%H:%M"
+msgstr "%H:%M"
+
+#: concerto_gui/localization.py:150
+msgid "%H:%M:%S"
+msgstr "%H:%M:%S"
+
+#: concerto_gui/localization.py:235 concerto_gui/localization.py:253
+#: concerto_gui/renderer/__init__.py:62 concerto_gui/views/crontab/__init__.py:95
+#: concerto_gui/views/statistics/alertstats.py:138
+#: concerto_gui/views/statistics/alertstats.py:157
+msgid "n/a"
+msgstr ""
+
+#: concerto_gui/localization.py:246
+#, python-format
+msgid "%(days)dd %(hours)dh %(minutes)d'"
+msgstr ""
+
+#: concerto_gui/main.py:127 concerto_gui/main.py:152
+#: concerto_gui/dataprovider/plugins/idmef/__init__.py:73
+msgid "Initialization error"
+msgstr "Ошибка инициализации"
+
+#: concerto_gui/main.py:138
+msgid "Version Requirement error"
+msgstr "Ошибка соответствия версии"
+
+#: concerto_gui/main.py:141
+#, python-format
+msgid "Concerto %(vPre)s requires libprelude %(vLib)s or higher"
+msgstr "Concerto %(vPre)s требует libprelude %(vLib)s или выше"
+
+#: concerto_gui/main.py:146
+#, python-format
+msgid "Concerto %(vPre)s requires libpreludedb %(vLib)s or higher"
+msgstr "Concerto %(vPre)s требует libpreludedb %(vLib)s или выше"
+
+#: concerto_gui/main.py:153
+#, python-format
+msgid ""
+"Cannot use %(type)s mode '%(name)s', please contact your local "
+"administrator."
+msgstr ""
+
+#: concerto_gui/main.py:192
+#, python-format
+msgid "Session '%s' does not accept any authentication module"
+msgstr "Сессия '%s' не принимает ни одного модуля аутентификации"
+
+#: concerto_gui/main.py:308
+#, python-format
+msgid "An unexpected condition happened while trying to load %s"
+msgstr ""
+
+#: concerto_gui/mainmenu.py:114
+#, python-format
+msgid "%S.%.6f"
+msgstr ""
+
+#: concerto_gui/mainmenu.py:115
+#, python-format
+msgid "%S.%.3f"
+msgstr ""
+
+#: concerto_gui/mainmenu.py:260
+msgid "Today"
+msgstr "Cегодня"
+
+#: concerto_gui/mainmenu.py:261
+msgid "Yesterday"
+msgstr "Вчера"
+
+#: concerto_gui/mainmenu.py:262
+msgid "This week"
+msgstr "Этой неделе"
+
+#: concerto_gui/mainmenu.py:263
+msgid "Last week"
+msgstr "Прошлая неделя"
+
+#: concerto_gui/mainmenu.py:264
+msgid "This month"
+msgstr "Этот месяц"
+
+#: concerto_gui/mainmenu.py:265
+msgid "Last month"
+msgstr "Прошлый месяц"
+
+#: concerto_gui/mainmenu.py:266 concerto_gui/mainmenu.py:267
+#, python-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d час"
+msgstr[1] "%d часа"
+msgstr[2] "%d часов"
+
+#: concerto_gui/mainmenu.py:268 concerto_gui/mainmenu.py:269
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d день"
+msgstr[1] "%d дня"
+msgstr[2] "%d дней"
+
+#: concerto_gui/mainmenu.py:270
+#, python-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] "%d неделя"
+msgstr[1] "%d недели"
+msgstr[2] "%d недель"
+
+#: concerto_gui/mainmenu.py:271 concerto_gui/mainmenu.py:272
+#, python-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d месяц"
+msgstr[1] "%d месяца"
+msgstr[2] "%d месяцев"
+
+#: concerto_gui/mainmenu.py:273
+#, python-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d год"
+msgstr[1] "%d года"
+msgstr[2] "%d лет"
+
+#: concerto_gui/mainmenu.py:277
+#, python-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d секунда"
+msgstr[1] "%d секунды"
+msgstr[2] "%d секунд"
+
+#: concerto_gui/mainmenu.py:278 concerto_gui/mainmenu.py:279 concerto_gui/mainmenu.py:280
+#, python-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d минута"
+msgstr[1] "%d минуты"
+msgstr[2] "%d минут"
+
+#: concerto_gui/mainmenu.py:299 concerto_gui/templates/mainmenu.mak:61
+msgid "Inactive"
+msgstr "Неактивный"
+
+#: concerto_gui/mainmenu.py:305 concerto_gui/templates/mainmenu.mak:89
+msgid "None"
+msgstr "Никто"
+
+#: concerto_gui/menu.py:71 concerto_gui/menu.py:74 concerto_gui/menu.py:80
+#: concerto_gui/menu.py:84 concerto_gui/menu.py:92
+#, fuzzy
+msgid "Menu error"
+msgstr "Внутренняя ошибка Prelude"
+
+#: concerto_gui/menu.py:71
+msgid "The provided YAML menu is invalid"
+msgstr ""
+
+#: concerto_gui/menu.py:74
+msgid "Empty menu"
+msgstr ""
+
+#: concerto_gui/menu.py:80
+#, python-format
+msgid "Menu without a name in %s"
+msgstr ""
+
+#: concerto_gui/menu.py:84
+msgid "Multiple default menus"
+msgstr ""
+
+#: concerto_gui/menu.py:92
+msgid "Multiple default views"
+msgstr ""
+
+#: concerto_gui/pluginmanager.py:208
+#, python-format
+msgid "Circular dependencies detected: %s"
+msgstr ""
+
+#: concerto_gui/pluginmanager.py:216
+#, python-format
+msgid "Missing dependency: %s"
+msgstr ""
+
+#: concerto_gui/resolve.py:170
+#, python-format
+msgid ""
+"Asynchronous DNS resolution disabled: twisted.names and twisted.internet "
+"required: %s"
+msgstr ""
+
+#: concerto_gui/usergroup.py:44
+#, python-format
+msgid "Access to view '%(view)s' forbidden. Required permissions: %(permissions)s"
+msgstr "Просмотр '%(view)s' запрещен. Требуемые права : %(permissions)s"
+
+#: concerto_gui/usergroup.py:47
+#, python-format
+msgid "Access to view '%s' forbidden"
+msgstr "Просмотр '%s' запрещен"
+
+#: concerto_gui/usergroup.py:50
+#, python-format
+msgid "Required permissions: %s"
+msgstr "Требуемые права: %s"
+
+#: concerto_gui/view.py:74 concerto_gui/view.py:81 concerto_gui/view.py:88
+msgid "Parameters Normalization failed"
+msgstr "Ошибка нормализации параметров"
+
+#: concerto_gui/view.py:75
+#, python-format
+msgid "Parameter '%s' is not valid"
+msgstr "Параметр '%s' неверен"
+
+#: concerto_gui/view.py:89
+#, python-format
+msgid "Required parameter '%s' is missing"
+msgstr "Требуемый параметр '%s' отсутствует"
+
+#: concerto_gui/view.py:95
+#, fuzzy
+msgid "Invalid method"
+msgstr "неверная временная зона"
+
+#: concerto_gui/view.py:102
+msgid "Invalid view"
+msgstr "Неверное отображение"
+
+#: concerto_gui/view.py:547
+#, python-format
+msgid "Method '%(method)s' is not allowed for view '%(view)s'"
+msgstr ""
+
+#: concerto_gui/view.py:551 concerto_gui/view.py:650
+#, python-format
+msgid "View '%s' does not exist"
+msgstr "Отображение '%s' не существует"
+
+#: concerto_gui/auth/auth.py:30
+msgid "Authentication failed"
+msgstr "Ошибка аутентификации"
+
+#: concerto_gui/auth/dbauth/__init__.py:33
+msgid "Authentication management with local user / group database"
+msgstr ""
+"Управление аутентификацией с помощью базы данных локальных "
+"пользователей/групп"
+
+#: concerto_gui/auth/dbauth/__init__.py:50
+msgid "DBAuth initialization error"
+msgstr "Ошибка инициализации DBAuth"
+
+#: concerto_gui/auth/dbauth/__init__.py:152
+#, fuzzy
+msgid "No login name provided"
+msgstr "Не указано имя группы"
+
+#: concerto_gui/dataprovider/__init__.py:35
+msgid "Equal"
+msgstr "Равно"
+
+#: concerto_gui/dataprovider/__init__.py:36
+msgid "Equal (case-insensitive)"
+msgstr "Соответствует (нечувствительная к регистру)"
+
+#: concerto_gui/dataprovider/__init__.py:37
+msgid "Not equal"
+msgstr "Не соответствует"
+
+#: concerto_gui/dataprovider/__init__.py:38
+msgid "Not equal (case-insensitive)"
+msgstr "Не соответствует (нечувствительная к регистру)"
+
+#: concerto_gui/dataprovider/__init__.py:39
+msgid "Regular expression"
+msgstr "Регулярное выражение"
+
+#: concerto_gui/dataprovider/__init__.py:40
+msgid "Regular expression (case-insensitive)"
+msgstr "Регулярное выражение (нечувствительное к регистру)"
+
+#: concerto_gui/dataprovider/__init__.py:41
+msgid "Not regular expression"
+msgstr "Не регулярное выражение"
+
+#: concerto_gui/dataprovider/__init__.py:42
+msgid "Not regular expression (case-insensitive)"
+msgstr "Не регулярное выражение (нечувствительное к регистру)"
+
+#: concerto_gui/dataprovider/__init__.py:43
+msgid "Lesser than"
+msgstr "Меньше чем"
+
+#: concerto_gui/dataprovider/__init__.py:44
+msgid "Lesser or equal"
+msgstr "Меньше или равно"
+
+#: concerto_gui/dataprovider/__init__.py:45
+msgid "Greater than"
+msgstr "Больше чем"
+
+#: concerto_gui/dataprovider/__init__.py:46
+msgid "Greater or equal"
+msgstr "Больше или равно"
+
+#: concerto_gui/dataprovider/__init__.py:47
+msgid "Substring"
+msgstr "Подстрока"
+
+#: concerto_gui/dataprovider/__init__.py:48
+msgid "Substring (case-insensitive)"
+msgstr "Подстрока (нечувствительная к регистру)"
+
+#: concerto_gui/dataprovider/__init__.py:49
+msgid "Not substring"
+msgstr "Не подстрока"
+
+#: concerto_gui/dataprovider/__init__.py:50
+msgid "Not substring (case-insensitive)"
+msgstr "Не подстрока (нечувствительная к регистру)"
+
+#: concerto_gui/dataprovider/__init__.py:92 concerto_gui/dataprovider/__init__.py:158
+msgid "Conversion error"
+msgstr "Ошибка конвертации"
+
+#: concerto_gui/dataprovider/__init__.py:93 concerto_gui/dataprovider/__init__.py:159
+#, python-format
+msgid "Value %(value)r cannot be converted to %(type)s"
+msgstr ""
+
+#: concerto_gui/dataprovider/__init__.py:109
+msgid "Backend error"
+msgstr "Ошибка бэкэнда"
+
+#: concerto_gui/dataprovider/__init__.py:109
+#, fuzzy, python-format
+msgid "No backend available for '%s' datatype"
+msgstr "Не сконфигурирован обработчик для '%s' типа данных"
+
+#: concerto_gui/dataprovider/__init__.py:116 concerto_gui/dataprovider/__init__.py:123
+msgid "Syntax error"
+msgstr "Ошибка синтаксиса"
+
+#: concerto_gui/dataprovider/__init__.py:116
+#, python-format
+msgid "Unknown path: %s"
+msgstr "Неизвестный путь: %s"
+
+#: concerto_gui/dataprovider/__init__.py:123 scripts/concerto_gui-cli:117
+#: scripts/concerto_gui-cli:126 scripts/concerto_gui-cli:137
+#, fuzzy
+msgid "Could not parse input"
+msgstr "Невозможно сохранить фильтр"
+
+#: concerto_gui/dataprovider/__init__.py:651
+#, python-format
+msgid "No handler configured for '%s' datatype"
+msgstr "Не сконфигурирован обработчик для '%s' типа данных"
+
+#: concerto_gui/dataprovider/__init__.py:662
+#, python-format
+msgid "Only one manager should be configured for '%s' backend"
+msgstr "Только один менеджер может быть сконфигурирован для '%s' бэкенда"
+
+#: concerto_gui/dataprovider/idmef.py:144
+msgid "High"
+msgstr "Высокий"
+
+#: concerto_gui/dataprovider/idmef.py:145
+msgid "Medium"
+msgstr "Средний"
+
+#: concerto_gui/dataprovider/idmef.py:146
+msgid "Low"
+msgstr "Низкий"
+
+#: concerto_gui/dataprovider/idmef.py:147
+msgid "Informational"
+msgstr "Информационный"
+
+#: concerto_gui/dataprovider/idmef.py:157
+#, fuzzy
+msgid "Provides an API to fetch IDMEF alerts"
+msgstr "Предоставляет API для получения событий безопасности"
+
+#: concerto_gui/dataprovider/idmef.py:158
+#: concerto_gui/views/agents/templates/agents.mak:90
+#: concerto_gui/views/datasearch/alert.py:123
+#: concerto_gui/views/datasearch/alert.py:124
+#: concerto_gui/views/datasearch/alert.py:242
+#: concerto_gui/views/statistics/alertstats.py:382
+msgid "Alerts"
+msgstr "События"
+
+#: concerto_gui/dataprovider/idmef.py:165 concerto_gui/views/datasearch/alert.py:137
+msgid "Classification"
+msgstr "Классификация"
+
+#: concerto_gui/dataprovider/idmef.py:166
+msgid "Source IP"
+msgstr "IP источника"
+
+#: concerto_gui/dataprovider/idmef.py:167
+#: concerto_gui/views/messagesummary/messagesummary.py:561
+#: concerto_gui/views/messagesummary/messagesummary.py:582
+msgid "Source port"
+msgstr "Порт источника"
+
+#: concerto_gui/dataprovider/idmef.py:168
+msgid "Target IP"
+msgstr "IP цели"
+
+#: concerto_gui/dataprovider/idmef.py:169
+#: concerto_gui/views/messagesummary/messagesummary.py:562
+#: concerto_gui/views/messagesummary/messagesummary.py:583
+msgid "Target port"
+msgstr "Порт цели"
+
+#: concerto_gui/dataprovider/idmef.py:170
+#, fuzzy
+msgid "Analyzer name"
+msgstr "Имя анализатора"
+
+#: concerto_gui/dataprovider/idmef.py:173
+#, fuzzy
+msgid "Alert deletion"
+msgstr "Список событий"
+
+#: concerto_gui/dataprovider/idmef.py:199
+#, fuzzy
+msgid "Provides an API to fetch IDMEF heartbeats"
+msgstr "Предоставляет API для получения событий безопасности"
+
+#: concerto_gui/dataprovider/idmef.py:200
+#: concerto_gui/views/agents/templates/agents.mak:94
+#: concerto_gui/views/datasearch/heartbeat.py:53
+msgid "Heartbeats"
+msgstr "События состояния"
+
+#: concerto_gui/dataprovider/idmef.py:205
+#, fuzzy
+msgid "Heartbeat deletion"
+msgstr "Анализ событий состояния"
+
+#: concerto_gui/dataprovider/log.py:41
+msgid "Provides an API to fetch logs"
+msgstr "Предоставляет API для получения логов"
+
+#: concerto_gui/dataprovider/log.py:42 concerto_gui/views/datasearch/log.py:50
+#: concerto_gui/views/datasearch/log.py:51
+msgid "Logs"
+msgstr "Логи"
+
+#: concerto_gui/dataprovider/log.py:49 concerto_gui/views/datasearch/log.py:60
+#, fuzzy
+msgid "Message"
+msgstr "Использование RAM"
+
+#: concerto_gui/dataprovider/log.py:50 concerto_gui/views/datasearch/log.py:58
+msgid "Host"
+msgstr "Хост"
+
+#: concerto_gui/dataprovider/log.py:51 concerto_gui/views/datasearch/log.py:59
+msgid "Program"
+msgstr "Программа"
+
+#: concerto_gui/dataprovider/log.py:52
+msgid "Timestamp"
+msgstr ""
+
+#: concerto_gui/dataprovider/utils.py:50
+#, fuzzy
+msgid "Invalid operation"
+msgstr "Неверный выбор пути"
+
+#: concerto_gui/dataprovider/utils.py:51
+msgid "Extraction is supported only for date fields"
+msgstr ""
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:88
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:139
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:231
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:877
+#, fuzzy
+msgid "Invalid configuration"
+msgstr "Отсутствует конфигурация"
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:89
+msgid "Elasticsearch instance must be named"
+msgstr ""
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:96
+msgid "Missing configuration"
+msgstr "Отсутствует конфигурация"
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:97
+#, python-format
+msgid "Could not find a valid configuration for Elasticsearch %s type."
+msgstr ""
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:140
+#, python-format
+msgid "Elasticsearch version %s is not supported."
+msgstr ""
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:162
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:167
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:188
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:211
+msgid "Request error"
+msgstr "ошибка запроса"
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:186
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:205
+msgid "Cannot further browse results. Please use a more specific filter."
+msgstr ""
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:192
+#, python-format
+msgid "Request error with HTTP code %d."
+msgstr ""
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:202
+msgid "Malformed query."
+msgstr ""
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:207
+#, python-format
+msgid "Request error with HTTP code %d. Reason: %s"
+msgstr ""
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:209
+#, python-format
+msgid "Request error with HTTP code %d. Unknown reason"
+msgstr ""
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:232
+#, fuzzy
+msgid "The specified Elasticsearch index does not exist"
+msgstr "Выбранная временная зона не существует"
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:462
+msgid "Elasticsearch database operator error"
+msgstr ""
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:463
+#, python-format
+msgid ""
+"The operator '%s' that you try to use is not supported by Prelude for the"
+" field '%s'."
+msgstr ""
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:475
+msgid "Only one _raw_query path can be specified for the selection"
+msgstr ""
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:475
+msgid "Elasticsearch database path selection error"
+msgstr ""
+
+#: concerto_gui/dataprovider/helpers/elasticsearch.py:906
+msgid "In your Elasticsearch instance, fields mapping is not well configured."
+msgstr ""
+
+#: concerto_gui/dataprovider/helpers/sql.py:174
+#, fuzzy
+msgid "Dataprovider error"
+msgstr "Плаины типы провайдера данных"
+
+#: concerto_gui/dataprovider/helpers/sql.py:175
+msgid "Could not find time bounds in CTE query"
+msgstr ""
+
+#: concerto_gui/dataprovider/parsers/lucene/__init__.py:52
+#, fuzzy
+msgid "Lucene emulation error"
+msgstr "Ошибка нормализации на бэкенде"
+
+#: concerto_gui/dataprovider/parsers/lucene/__init__.py:53
+msgid ""
+"This Lucene expression cannot be emulated properly using the Criterion "
+"backend"
+msgstr ""
+
+#: concerto_gui/dataprovider/plugins/idmef/__init__.py:113
+#, fuzzy
+msgid "Plugin for fetching IDMEF alerts from the Prelude database"
+msgstr "Плагин для получения событий IDMEF из базы данных Prelude"
+
+#: concerto_gui/dataprovider/plugins/idmef/__init__.py:127
+#, fuzzy
+msgid "Plugin for fetching IDMEF heartbeats from the Prelude database"
+msgstr "Плагин для получения событий IDMEF из базы данных Prelude"
+
+#: concerto_gui/dataprovider/plugins/log/elasticsearch.py:33
+msgid "Plugin for querying logs from Elasticsearch"
+msgstr ""
+
+#: concerto_gui/plugins/filter/__init__.py:14
+msgid "Filters management page"
+msgstr "Страница управления фильтрами"
+
+#: concerto_gui/plugins/filter/filter.py:111
+#: concerto_gui/views/usermanagement/usermanagement.py:307
+msgid "Preferences"
+msgstr "Преферанс"
+
+#: concerto_gui/plugins/filter/filter.py:111
+#: concerto_gui/plugins/filter/templates/filterlisting.mak:17
+msgid "Filters"
+msgstr "Фильтры"
+
+#: concerto_gui/plugins/filter/filter.py:122
+#: concerto_gui/plugins/filter/templates/filteredition.mak:66
+#, python-format
+msgid "Filter %s"
+msgstr "Фильтр %s"
+
+#: concerto_gui/plugins/filter/filter.py:193 concerto_gui/plugins/filter/filter.py:211
+msgid "Filter error"
+msgstr "Ошибка фильтра"
+
+#: concerto_gui/plugins/filter/filter.py:193 concerto_gui/plugins/filter/filter.py:211
+#, python-format
+msgid "Filter '%s' does not exist"
+msgstr "Фильтр '%s' не существует"
+
+#: concerto_gui/plugins/filter/filter.py:233 concerto_gui/plugins/filter/filter.py:235
+#: concerto_gui/plugins/filter/filter.py:247
+msgid "Could not save filter"
+msgstr "Невозможно сохранить фильтр"
+
+#: concerto_gui/plugins/filter/filter.py:233
+msgid "No name for this filter was provided"
+msgstr "Не введено имя фильтра"
+
+#: concerto_gui/plugins/filter/filter.py:235
+msgid "The filter name cannot start with a slash"
+msgstr ""
+
+#: concerto_gui/plugins/filter/filter.py:247
+msgid "The filter name is already used by another filter"
+msgstr "Имя данного фильтра уже существует"
+
+#: concerto_gui/plugins/filter/templates/filteredition.mak:66
+#: concerto_gui/plugins/filter/templates/filterlisting.mak:17
+#: concerto_gui/plugins/filter/templates/menu.mak:48
+msgid "New filter"
+msgstr "Новый фильтр"
+
+#: concerto_gui/plugins/filter/templates/filteredition.mak:73
+#: concerto_gui/views/crontab/templates/cronjob.mak:112
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:80
+msgid "Name:"
+msgstr "Имя:"
+
+#: concerto_gui/plugins/filter/templates/filteredition.mak:75
+msgid "Filter name"
+msgstr "Фильтровать по:"
+
+#: concerto_gui/plugins/filter/templates/filteredition.mak:80
+msgid "Category:"
+msgstr "Категория:"
+
+#: concerto_gui/plugins/filter/templates/filteredition.mak:92
+msgid "Description:"
+msgstr "Описание:"
+
+#: concerto_gui/plugins/filter/templates/filteredition.mak:122
+#: concerto_gui/templates/error.mak:176 concerto_gui/templates/toplayout.mak:61
+#: concerto_gui/views/crontab/templates/cronjob.mak:122
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:205
+msgid "Cancel"
+msgstr "Отмена"
+
+#: concerto_gui/plugins/filter/templates/filteredition.mak:123
+#: concerto_gui/views/crontab/templates/cronjob.mak:123
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:197
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:199
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:206
+msgid "Save"
+msgstr "Сохранить"
+
+#: concerto_gui/plugins/filter/templates/filterlisting.mak:23
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:154
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:190
+#: concerto_gui/views/agents/templates/agents.mak:36
+#: concerto_gui/views/agents/templates/heartbeatanalyze.mak:19
+#: concerto_gui/views/crontab/templates/crontab.mak:17
+#: concerto_gui/views/messagesummary/messagesummary.py:295
+#: concerto_gui/views/messagesummary/messagesummary.py:432
+#: concerto_gui/views/messagesummary/messagesummary.py:689
+#: concerto_gui/views/messagesummary/messagesummary.py:706
+#: concerto_gui/views/messagesummary/messagesummary.py:729
+#: concerto_gui/views/messagesummary/messagesummary.py:791
+#: concerto_gui/views/messagesummary/messagesummary.py:810
+#: concerto_gui/views/messagesummary/messagesummary.py:846
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:82
+msgid "Name"
+msgstr "Имя"
+
+#: concerto_gui/plugins/filter/templates/filterlisting.mak:24
+#: concerto_gui/views/messagesummary/messagesummary.py:763
+msgid "Category"
+msgstr "Категория"
+
+#: concerto_gui/plugins/filter/templates/filterlisting.mak:28
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:155
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:191
+#: concerto_gui/views/idmefnav/templates/idmefnav.mak:56
+#: concerto_gui/views/messagesummary/messagesummary.py:758
+#: concerto_gui/views/messagesummary/messagesummary.py:764
+msgid "Description"
+msgstr "Описание"
+
+#: concerto_gui/plugins/filter/templates/filterlisting.mak:40
+#: concerto_gui/views/usermanagement/templates/userlisting.mak:75
+msgid "Create"
+msgstr "Создать"
+
+#: concerto_gui/plugins/filter/templates/filterlisting.mak:41
+msgid "Duplicate"
+msgstr "Дубликат"
+
+#: concerto_gui/plugins/filter/templates/filterlisting.mak:42
+msgid "Delete the selected filters?"
+msgstr "Удалить выбранные фильтры?"
+
+#: concerto_gui/plugins/filter/templates/filterlisting.mak:42
+#: concerto_gui/views/agents/templates/agents.mak:96
+#: concerto_gui/views/datasearch/idmef.py:198
+#: concerto_gui/views/usermanagement/templates/userlisting.mak:78
+msgid "Delete"
+msgstr "Удалить"
+
+#: concerto_gui/plugins/filter/templates/menu.mak:4
+msgid "Filter:"
+msgstr "Фильтр:"
+
+#: concerto_gui/plugins/filter/templates/menu.mak:38
+msgid "Available filters"
+msgstr "Доступные фильтры:"
+
+#: concerto_gui/plugins/filter/templates/menu.mak:46
+msgid "No filter"
+msgstr "Нет фильтра"
+
+#: concerto_gui/plugins/filter/templates/menu.mak:51
+msgid "No category"
+msgstr "Нет категории"
+
+#: concerto_gui/plugins/filter/templates/widget.mak:7
+msgid "Select a path..."
+msgstr "Выберите путь..."
+
+#: concerto_gui/plugins/filter/templates/widget.mak:9
+msgid "Default paths"
+msgstr "Пути по-умолчанию"
+
+#: concerto_gui/plugins/filter/templates/widget.mak:15
+msgid "All paths"
+msgstr "Все пути"
+
+#: concerto_gui/plugins/filter/templates/widget.mak:28
+#: concerto_gui/plugins/filter/templates/widget.mak:49
+msgid "Change operator"
+msgstr ""
+
+#: concerto_gui/plugins/filter/templates/widget.mak:35
+msgid "value"
+msgstr "значение"
+
+#: concerto_gui/plugins/filter/templates/widget.mak:37
+msgid "Delete condition"
+msgstr ""
+
+#: concerto_gui/plugins/filter/templates/widget.mak:45
+#, fuzzy
+msgid "AND"
+msgstr "раскрыть"
+
+#: concerto_gui/plugins/filter/templates/widget.mak:45
+#, fuzzy
+msgid "OR"
+msgstr "Порт"
+
+#: concerto_gui/plugins/filter/templates/widget.mak:59
+msgid "Add condition"
+msgstr ""
+
+#: concerto_gui/plugins/filter/templates/widget.mak:60
+msgid "Add group"
+msgstr ""
+
+#: concerto_gui/plugins/filter/templates/widget.mak:62
+msgid "Delete group"
+msgstr ""
+
+#: concerto_gui/plugins/warning/__init__.py:35
+msgid "Prelude Warning message"
+msgstr ""
+
+#: concerto_gui/plugins/warning/templates/warning.mak:14
+msgid "WARNING"
+msgstr "ВНИМАНИЕ!"
+
+#: concerto_gui/plugins/warning/templates/warning.mak:19
+#, fuzzy
+msgid "Prelude OSS is the open-source version of Prelude SIEM"
+msgstr "Prelude OSS это версия с открытым исходным кодом приложения Prelude SIEM"
+
+#: concerto_gui/plugins/warning/templates/warning.mak:21
+#, fuzzy, python-format
+msgid ""
+"This OSS version has <span style='font-weight: bold'>lower "
+"performance</span> and <span style='font-weight: bold'>less <a "
+"href='%s'>features</a></span> than the commercial version."
+msgstr ""
+"Эта OSS версия имеет <span style='font-weight: bold'>пониженную "
+"производительность</span> и <span style='font-weight: bold'> меньше <a "
+"href='%s'>возможностей</a></span> чем Pro/Enterprise версия."
+
+#: concerto_gui/plugins/warning/templates/warning.mak:22
+msgid ""
+"It is intended for tests and small environments, and should not be used "
+"in critical environments."
+msgstr ""
+"Предполагается для тестов и небольших окружений. Не следует использовать "
+"вкритически важных системах"
+
+#: concerto_gui/plugins/warning/templates/warning.mak:25
+#, python-format
+msgid "Prelude OSS is distributed under the %s."
+msgstr "Prelude OSS распространяется под %s."
+
+#: concerto_gui/plugins/warning/templates/warning.mak:26
+msgid ""
+"Products derivated from Prelude OSS modules are therefore subject to the "
+"terms of the GPLv2."
+msgstr ""
+
+#: concerto_gui/plugins/warning/templates/warning.mak:29
+#: concerto_gui/templates/error.mak:171 concerto_gui/templates/toplayout.mak:62
+#: concerto_gui/templates/toplayout.mak:77 concerto_gui/templates/toplayout.mak:94
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:44
+msgid "OK"
+msgstr ""
+
+#: concerto_gui/renderer/__init__.py:44
+msgid "No data to display."
+msgstr "Нет данных для отображения"
+
+#: concerto_gui/renderer/__init__.py:139 concerto_gui/renderer/__init__.py:143
+#: concerto_gui/renderer/__init__.py:147
+msgid "Renderer error"
+msgstr "Ошибка рендерера"
+
+#: concerto_gui/renderer/__init__.py:140
+#, python-format
+msgid "No backend supporting render type '%s'"
+msgstr ""
+
+#: concerto_gui/renderer/__init__.py:144
+#, python-format
+msgid "No backend named '%s'"
+msgstr ""
+
+#: concerto_gui/renderer/__init__.py:148
+#, python-format
+msgid "Backend '%(backend)s' does not support render type '%(type)s'"
+msgstr ""
+
+#: concerto_gui/renderer/chartjs/__init__.py:104
+#, fuzzy
+msgid "ChartJS renderer backend"
+msgstr "Плагины рендеринга бэкенда"
+
+#: concerto_gui/renderer/chartjs/bar/__init__.py:38
+#, fuzzy
+msgid "ChartJS Bar renderer type"
+msgstr "Плагины типа рендеринга"
+
+#: concerto_gui/renderer/chartjs/pie/__init__.py:76
+#, fuzzy
+msgid "ChartJS Pie renderer type"
+msgstr "Плагины типа рендеринга"
+
+#: concerto_gui/renderer/chartjs/pie/__init__.py:85
+#, fuzzy
+msgid "ChartJS Doughnut renderer type"
+msgstr "Плагины типа рендеринга"
+
+#: concerto_gui/renderer/chartjs/timeline/__init__.py:85
+#, fuzzy
+msgid "ChartJS Timeline renderer type"
+msgstr "Плагины типа рендеринга"
+
+#: concerto_gui/renderer/chartjs/timeline/__init__.py:98
+msgid "ChartJS Timebar renderer type"
+msgstr ""
+
+#: concerto_gui/session/session.py:39
+msgid "Invalid session"
+msgstr "Неверная сессия"
+
+#: concerto_gui/session/session.py:40
+msgid "The session cookie carried by your browser is invalid"
+msgstr ""
+
+#: concerto_gui/session/session.py:44
+msgid "Session expired"
+msgstr "Время жизни сессии истекло"
+
+#: concerto_gui/session/session.py:45
+msgid "Your session has expired: please sign in again to continue using Prelude"
+msgstr ""
+
+#: concerto_gui/session/session.py:186
+msgid "Logged out"
+msgstr "Пользователь вышел из системы"
+
+#: concerto_gui/session/anonymous/anonymous.py:31
+msgid "Anonymous authentication"
+msgstr "Анонимная аутентификация"
+
+#: concerto_gui/session/loginform/__init__.py:35
+msgid "Login/Password authentication"
+msgstr "Aутентификация пользователя по логину/паролю"
+
+#: concerto_gui/session/loginform/templates/loginform.mak:17
+msgid "User authentication"
+msgstr "Aутентификация пользователя"
+
+#: concerto_gui/session/loginform/templates/loginform.mak:31
+#: concerto_gui/views/usermanagement/templates/userlisting.mak:5
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:30
+msgid "Login"
+msgstr "Имя пользователя"
+
+#: concerto_gui/session/loginform/templates/loginform.mak:38
+msgid "Password"
+msgstr "Пароль"
+
+#: concerto_gui/session/loginform/templates/loginform.mak:43
+#, fuzzy
+msgid "Log in"
+msgstr "Имя пользователя"
+
+#: concerto_gui/templates/baseview.mak:148
+msgid "View options"
+msgstr ""
+
+#: concerto_gui/templates/baseview.mak:151
+msgid "View help"
+msgstr ""
+
+#: concerto_gui/templates/baseview.mak:205
+msgid "This app has been disabled or failed to load."
+msgstr "Это приложение было выключено или возникла ошибка при его загрузке"
+
+#: concerto_gui/templates/baseview.mak:211 concerto_gui/templates/baseview.mak:222
+msgid "name"
+msgstr "имя"
+
+#: concerto_gui/templates/baseview.mak:287
+msgid "About"
+msgstr "О программе"
+
+#: concerto_gui/templates/baseview.mak:290
+msgid "Are you sure you want to log out?"
+msgstr "Вы уверены что хотите выйти?"
+
+#: concerto_gui/templates/baseview.mak:290
+msgid "Logout"
+msgstr "Выход"
+
+#: concerto_gui/templates/error.mak:66
+msgid "Detail"
+msgstr "Детали"
+
+#: concerto_gui/templates/error.mak:67
+msgid "Copy to clipboard"
+msgstr "Скопировать в буфер обмена"
+
+#: concerto_gui/templates/error.mak:137 concerto_gui/templates/error.mak:145
+msgid "Error: {0}"
+msgstr "Ошибка: {0}"
+
+#: concerto_gui/templates/error.mak:155
+msgid "This may be due to one or more of the following reasons:"
+msgstr "Это может случиться по следующим причинам:"
+
+#: concerto_gui/templates/error.mak:157
+msgid "You don't have the required permissions."
+msgstr ""
+
+#: concerto_gui/templates/error.mak:158
+#, python-format
+msgid "Required apps are disabled. See the %s page for more details."
+msgstr ""
+
+#: concerto_gui/templates/error.mak:177
+msgid "Sign in"
+msgstr ""
+
+#: concerto_gui/templates/error.mak:181
+msgid "Back"
+msgstr "Назад"
+
+#: concerto_gui/templates/error.mak:184
+msgid "Retry"
+msgstr "Повторная попытка"
+
+#: concerto_gui/templates/error.mak:186
+msgid "Redirect to main page"
+msgstr ""
+
+#: concerto_gui/templates/mainmenu.mak:44
+msgid "Refresh:"
+msgstr "Обновить:"
+
+#: concerto_gui/templates/mainmenu.mak:49
+msgid "Update frequency of the current page"
+msgstr "Частота обновления текущей страницы"
+
+#: concerto_gui/templates/mainmenu.mak:76
+msgid "Period:"
+msgstr "Период:"
+
+#: concerto_gui/templates/mainmenu.mak:81
+msgid "Period to visualize"
+msgstr "Период для визуализации"
+
+#: concerto_gui/templates/mainmenu.mak:111
+msgid "Start:"
+msgstr "Нача́ло:"
+
+#: concerto_gui/templates/mainmenu.mak:117
+msgid "start"
+msgstr "нача́ло"
+
+#: concerto_gui/templates/mainmenu.mak:117
+msgid "Start date"
+msgstr "Дата начала"
+
+#: concerto_gui/templates/mainmenu.mak:123
+msgid "End:"
+msgstr "Конец:"
+
+#: concerto_gui/templates/mainmenu.mak:130
+msgid "end"
+msgstr "конец"
+
+#: concerto_gui/templates/mainmenu.mak:130
+msgid "End date"
+msgstr "Дата окончания"
+
+#: concerto_gui/templates/toplayout.mak:57
+msgid "Please Confirm"
+msgstr "Пожалуйста подтвердите"
+
+#: concerto_gui/templates/toplayout.mak:73
+#, fuzzy
+msgid "Prelude Dialog"
+msgstr "Внутренняя ошибка Prelude"
+
+#: concerto_gui/templates/toplayout.mak:88
+#: concerto_gui/views/statistics/templates/embeddedstats.mak:41
+#: concerto_gui/views/statistics/templates/statistics.mak:35
+#, fuzzy
+msgid "Connection error"
+msgstr "Ошибка конфигурации"
+
+#: concerto_gui/templates/toplayout.mak:91
+msgid ""
+"Connection failed, the server may be down or you may be experiencing "
+"network issues."
+msgstr ""
+
+#: concerto_gui/utils/misc.py:72 concerto_gui/views/agents/agents.py:45
+msgid "Offline"
+msgstr "Выключен"
+
+#: concerto_gui/utils/misc.py:75 concerto_gui/views/agents/agents.py:210
+msgid "Unknown"
+msgstr "Неизвестен"
+
+#: concerto_gui/utils/misc.py:78
+msgid "Missing"
+msgstr "Отсутствует"
+
+#: concerto_gui/utils/misc.py:80 concerto_gui/views/agents/agents.py:44
+msgid "Online"
+msgstr "Доступен"
+
+#: concerto_gui/views/about/__init__.py:13
+msgid "Prelude About page"
+msgstr "Страница о Prelude"
+
+#: concerto_gui/views/about/templates/about.mak:11
+#, python-format
+msgid "Prelude SIEM version %s"
+msgstr "Версия Prelude SIEM %s"
+
+#: concerto_gui/views/about/templates/about.mak:15
+#, fuzzy
+msgid "Prelude SIEM is a \"Security Information and Event Management\" system"
+msgstr ""
+"Prelude это SIEM (Security Information and Event Management)(Управление "
+"событиями безопасности)"
+
+#: concerto_gui/views/about/templates/about.mak:21
+#, fuzzy
+msgid ""
+"{prelude} is a security management solution that collects, filters, "
+"normalizes, correlates, stores and archives data from various sources of "
+"your information system. Based on all this information Prelude SIEM can "
+"provide a global vision of your system's security level and thus prevent "
+"attacks, intrusions as well as viral infections."
+msgstr ""
+"{prelude} это решение управления безопасностью, которое собирает, "
+"фильтрует и нормализует,коррелирует, хранит и архивирует данные от "
+"различных источников вашихинформационных систем. Основываясь на данной "
+"информации Prelude может предоставитьобщий вид уровня безопасности ваших "
+"систем и соответственно предотвратить атаки, вторжения, а также вирусные "
+"инфекции."
+
+#: concerto_gui/views/about/templates/about.mak:26
+#, fuzzy
+msgid "Vigilo NMS is a \"Network Monitoring System\""
+msgstr "Vigilo это NMS (Network Management System)(Система управления сетью.)"
+
+#: concerto_gui/views/about/templates/about.mak:32
+#, fuzzy
+msgid ""
+"{vigilo} is a complete monitoring and performance management solution "
+"capable of handling medium and large-scale systems (network - servers - "
+"applications) due to its distributed and modular architecture. Vigilo NMS"
+" offers all the features required for performance supervision: states and"
+" alarms management, metrology, cartography, event correlation and "
+"reporting."
+msgstr ""
+"{vigilo} представляет собой комплексное решение для мониторинга и "
+"управления производительностью, способноеобработывать данные средних и "
+"крупномасштабных систем (сеть, сервера, приложения)благодаря своей "
+"распределенной и модульной архитектуре. Vigilo предлагает всефункции, "
+"необходимые для надзора за производительностью: управление состоянием и "
+"событиями, метрология, картография, корреляция событий и отчетность."
+
+#: concerto_gui/views/about/templates/about.mak:38
+#, python-format
+msgid ""
+"Prelude SIEM and Vigilo NMS are being developed by the %s company, "
+"designer, integrator and operator of mission critical systems."
+msgstr ""
+"Prelude SIEM и Vigilo NMS разрабатываются в компании %s - дизайнере, "
+"интеграторе и операторе критически важных систем."
+
+#: concerto_gui/views/about/templates/about.mak:43
+msgid "Contact"
+msgstr "Контакт"
+
+#: concerto_gui/views/about/templates/about.mak:45
+msgid "Phone:"
+msgstr "Телефон:"
+
+#: concerto_gui/views/about/templates/about.mak:46
+msgid "Fax:"
+msgstr "Факс:"
+
+#: concerto_gui/views/about/templates/about.mak:49
+#, fuzzy
+msgid "Corporate"
+msgstr "Порт источника"
+
+#: concerto_gui/views/about/templates/about.mak:55
+#, fuzzy
+msgid "Community"
+msgstr "команда"
+
+#: concerto_gui/views/about/templates/about.mak:65
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:132
+#: concerto_gui/views/agents/templates/heartbeatanalyze.mak:71
+#: concerto_gui/views/messagesummary/templates/messagesummary.mak:118
+#: concerto_gui/views/statistics/templates/embeddedstats.mak:61
+msgid "Close"
+msgstr "Закрыть"
+
+#: concerto_gui/views/aboutplugin/__init__.py:37
+msgid "Plugin installation and activation management page"
+msgstr "Страница управления установкой и активацией плагинов"
+
+#: concerto_gui/views/aboutplugin/__init__.py:41
+#: concerto_gui/views/crontab/__init__.py:37
+#: concerto_gui/views/usermanagement/usermanagement.py:26
+msgid "USER_MANAGEMENT"
+msgstr "USER_MANAGEMENT (Управление пользователями)"
+
+#: concerto_gui/views/aboutplugin/__init__.py:43
+msgid "Apps: API"
+msgstr "Плагины API"
+
+#: concerto_gui/views/aboutplugin/__init__.py:44
+msgid "Apps: View"
+msgstr "Плагины просмотра"
+
+#: concerto_gui/views/aboutplugin/__init__.py:45
+msgid "Apps: Dataprovider backend"
+msgstr "Плагины провайдера данных для бэкенда"
+
+#: concerto_gui/views/aboutplugin/__init__.py:46
+msgid "Apps: Dataprovider type"
+msgstr "Плаины типы провайдера данных"
+
+#: concerto_gui/views/aboutplugin/__init__.py:47
+msgid "Apps: Authentication"
+msgstr "Плагины аутентификации пользователя"
+
+#: concerto_gui/views/aboutplugin/__init__.py:48
+msgid "Apps: Identification"
+msgstr "Плагины идентификации"
+
+#: concerto_gui/views/aboutplugin/__init__.py:49
+msgid "Apps: Renderer backend"
+msgstr "Плагины рендеринга бэкенда"
+
+#: concerto_gui/views/aboutplugin/__init__.py:50
+msgid "Apps: Renderer type"
+msgstr "Плагины типа рендеринга"
+
+#: concerto_gui/views/aboutplugin/__init__.py:83
+msgid "list plugin: list installed plugins"
+msgstr ""
+
+#: concerto_gui/views/aboutplugin/__init__.py:92
+msgid "Apps"
+msgstr "Плагины"
+
+#: concerto_gui/views/aboutplugin/__init__.py:121
+msgid "sync plugin: initialize the plugin database schemas"
+msgstr ""
+
+#: concerto_gui/views/aboutplugin/__init__.py:135
+#, python-format
+msgid "Applying %(module)s %(script)s..."
+msgstr "Применяется %(module)s %(script)s..."
+
+#: concerto_gui/views/aboutplugin/__init__.py:146
+msgid "All updates applied"
+msgstr "Все обновления применены"
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:44
+#, fuzzy
+msgid "ERROR"
+msgstr "Оператор"
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:48
+msgid "Update failed"
+msgstr "Ошибка обновления"
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:111
+#, fuzzy
+msgid "Update Dialog"
+msgstr "Журнал обновлений"
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:121
+msgid "Plugin"
+msgstr ""
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:122
+#, fuzzy
+msgid "Script"
+msgstr "Описание"
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:123
+msgid "Result"
+msgstr "Результат"
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:144
+msgid "Plugin Maintenance"
+msgstr "Управление плагинами"
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:147
+msgid ""
+"The following apps need to be updated before they can be loaded into the "
+"system"
+msgstr ""
+"Слебующие плагины необходимо обновить прежде чем они могут быть загружены"
+" в систему"
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:156
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:192
+#: concerto_gui/views/agents/templates/agents.mak:40
+#: concerto_gui/views/messagesummary/messagesummary.py:434
+#: concerto_gui/views/messagesummary/messagesummary.py:543
+msgid "Version"
+msgstr "Версия"
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:157
+msgid "Current database version"
+msgstr "Текущая версия базы данных"
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:158
+msgid "Required database update"
+msgstr "Требуется обновление базы данных"
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:174
+msgid "Install update"
+msgstr "Установить обновления"
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:182
+msgid "Installed Apps"
+msgstr "Установленные плагины"
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:193
+msgid "Database version"
+msgstr "Версия базы данных"
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:194
+msgid "Active"
+msgstr "Активный"
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:215
+msgid "Update the selected apps?"
+msgstr "Обновить выбранные плагины?"
+
+#: concerto_gui/views/aboutplugin/templates/aboutplugin.mak:215
+msgid "Update"
+msgstr "Обновить"
+
+#: concerto_gui/views/agents/__init__.py:12
+msgid "Agents status information page"
+msgstr "Страница информации о статусе агентов"
+
+#: concerto_gui/views/agents/agents.py:64 concerto_gui/views/agents/agents.py:133
+msgid "Agents"
+msgstr "Агенты"
+
+#: concerto_gui/views/agents/agents.py:110
+msgid "Node name n/a"
+msgstr "Имя узла неизвестно"
+
+#: concerto_gui/views/agents/agents.py:111
+msgid "OS version n/a"
+msgstr "Версия ОС неизвестна"
+
+#: concerto_gui/views/agents/agents.py:112
+msgid "OS type n/a"
+msgstr "Тип ОС неизвестен"
+
+#: concerto_gui/views/agents/agents.py:117
+msgid "Node location n/a"
+msgstr "Расположение узла неизвестно"
+
+#: concerto_gui/views/agents/agents.py:127
+msgid "Alert listing"
+msgstr "Список событий"
+
+#: concerto_gui/views/agents/agents.py:128
+msgid "Heartbeat listing"
+msgstr "Анализ событий состояния"
+
+#: concerto_gui/views/agents/agents.py:129
+#: concerto_gui/views/agents/templates/heartbeatanalyze.mak:12
+msgid "Heartbeat analysis"
+msgstr "Анализ событий состояния"
+
+#: concerto_gui/views/agents/agents.py:133 concerto_gui/views/agents/agents.py:157
+#: concerto_gui/views/datasearch/idmef.py:160
+#: concerto_gui/views/messagesummary/messagesummary.py:339
+msgid "IDMEF_VIEW"
+msgstr "IDMEF_VIEW (Просмотр IDMEF)"
+
+#: concerto_gui/views/agents/agents.py:133
+#: concerto_gui/views/datasearch/heartbeat.py:52
+msgid "Monitoring"
+msgstr "Мониторинг"
+
+#: concerto_gui/views/agents/agents.py:142
+msgid "IDMEF_ALTER"
+msgstr "IDMEF_ALTER (Изменение IDMEF)"
+
+#: concerto_gui/views/agents/agents.py:184
+msgid "Normal sensor start"
+msgstr "Нормальный запуск сенсора"
+
+#: concerto_gui/views/agents/agents.py:186
+msgid "Unexpected sensor restart"
+msgstr "Неожиданный перезапуск сенсора"
+
+#: concerto_gui/views/agents/agents.py:192
+#, python-format
+msgid "Unexpected heartbeat interval: %(delta)s"
+msgstr "Неожиданный интервал статусного сообщения (heartbeat): %(delta)s"
+
+#: concerto_gui/views/agents/agents.py:195
+msgid "Normal sensor stop"
+msgstr "Нормальная остановка сенсора"
+
+#: concerto_gui/views/agents/agents.py:207
+#, python-format
+msgid "Sensor is down since %s"
+msgstr "Сенсор недоступен с %s"
+
+#: concerto_gui/views/agents/agents.py:216
+#, python-format
+msgid ""
+"No anomaly in the last %(count)d heartbeats (one heartbeat every "
+"%(delta)s average)"
+msgstr ""
+"Без аномалий в последних %(count)d статусных сообщениях (heartbeats) "
+"(одно сообщение каждые %(delta)s в среднем)"
+
+#: concerto_gui/views/agents/templates/agents.mak:31
+msgid "Show/Hide all"
+msgstr "Показать/Скрыть всё"
+
+#: concerto_gui/views/agents/templates/agents.mak:31
+#: concerto_gui/views/usermanagement/templates/userlisting.mak:49
+msgid "Search:"
+msgstr "Поиск:"
+
+#: concerto_gui/views/agents/templates/agents.mak:37
+msgid "Location"
+msgstr "Расположение"
+
+#: concerto_gui/views/agents/templates/agents.mak:38
+msgid "Node"
+msgstr "Узел"
+
+#: concerto_gui/views/agents/templates/agents.mak:39
+#: concerto_gui/views/agents/templates/heartbeatanalyze.mak:20
+#: concerto_gui/views/datasearch/heartbeat.py:64
+#: concerto_gui/views/messagesummary/messagesummary.py:431
+msgid "Model"
+msgstr "Модель"
+
+#: concerto_gui/views/agents/templates/agents.mak:41
+#: concerto_gui/views/messagesummary/messagesummary.py:435
+msgid "Class"
+msgstr "Класс"
+
+#: concerto_gui/views/agents/templates/agents.mak:45
+#: concerto_gui/views/agents/templates/heartbeatanalyze.mak:25
+msgid "Latest heartbeat"
+msgstr "Последнее время событий состояния"
+
+#: concerto_gui/views/agents/templates/agents.mak:46
+msgid "Status"
+msgstr "Состояние"
+
+#: concerto_gui/views/agents/templates/agents.mak:90
+#, fuzzy
+msgid "Delete the alerts of the selected agent(s)"
+msgstr "Удалить выбранные события?"
+
+#: concerto_gui/views/agents/templates/agents.mak:94
+#, fuzzy
+msgid "Delete the heartbeats of the selected agent(s)"
+msgstr "Удалить выбранные события?"
+
+#: concerto_gui/views/agents/templates/agents.mak:96
+msgid "Delete the selected IDMEF messages?"
+msgstr "Удалить выбранные сообщения IDMEF?"
+
+#: concerto_gui/views/agents/templates/heartbeatanalyze.mak:21
+msgid "OS"
+msgstr "ОС"
+
+#: concerto_gui/views/agents/templates/heartbeatanalyze.mak:22
+#: concerto_gui/views/datasearch/heartbeat.py:63
+#: concerto_gui/views/messagesummary/messagesummary.py:419
+msgid "Node name"
+msgstr "Имя узла"
+
+#: concerto_gui/views/agents/templates/heartbeatanalyze.mak:23
+#: concerto_gui/views/messagesummary/messagesummary.py:402
+msgid "Node location"
+msgstr "Расположение узла"
+
+#: concerto_gui/views/agents/templates/heartbeatanalyze.mak:24
+#: concerto_gui/views/datasearch/heartbeat.py:62
+#: concerto_gui/views/messagesummary/messagesummary.py:425
+msgid "Node address"
+msgstr "Адрес узла"
+
+#: concerto_gui/views/agents/templates/heartbeatanalyze.mak:26
+msgid "Current status"
+msgstr "Текущее состояние"
+
+#: concerto_gui/views/agents/templates/heartbeatanalyze.mak:56
+msgid "Events"
+msgstr "События"
+
+#: concerto_gui/views/crontab/__init__.py:30
+msgid "Scheduling management"
+msgstr ""
+
+#: concerto_gui/views/crontab/__init__.py:35
+#, fuzzy
+msgid "Scheduled jobs management page"
+msgstr "Страница управления фильтрами"
+
+#: concerto_gui/views/crontab/__init__.py:62
+msgid "Configuration"
+msgstr "Конфигурация"
+
+#: concerto_gui/views/crontab/__init__.py:62
+msgid "Scheduling"
+msgstr "Планирование"
+
+#: concerto_gui/views/crontab/__init__.py:75 concerto_gui/views/crontab/__init__.py:104
+msgid "SYSTEM"
+msgstr "СИСТЕМА"
+
+#: concerto_gui/views/crontab/__init__.py:88
+msgid "Pending"
+msgstr "В ожидании"
+
+#: concerto_gui/views/crontab/__init__.py:98
+msgid "Error"
+msgstr "Ошибка"
+
+#: concerto_gui/views/crontab/templates/cronjob.mak:54
+msgid "Schedule:"
+msgstr "Расписание:"
+
+#: concerto_gui/views/crontab/templates/cronjob.mak:69
+msgid "custom"
+msgstr "настраиваемый"
+
+#: concerto_gui/views/crontab/templates/cronjob.mak:70
+msgid "disabled"
+msgstr "выключено"
+
+#: concerto_gui/views/crontab/templates/cronjob.mak:79
+msgid "Minute:"
+msgstr "Минута:"
+
+#: concerto_gui/views/crontab/templates/cronjob.mak:83
+msgid "Hour:"
+msgstr "Час:"
+
+#: concerto_gui/views/crontab/templates/cronjob.mak:87
+msgid "Day:"
+msgstr "День:"
+
+#: concerto_gui/views/crontab/templates/cronjob.mak:91
+msgid "Month:"
+msgstr "Месяц:"
+
+#: concerto_gui/views/crontab/templates/cronjob.mak:95
+msgid "Weekday:"
+msgstr "День недели:"
+
+#: concerto_gui/views/crontab/templates/cronjob.mak:107
+msgid "Edit Job"
+msgstr ""
+
+#: concerto_gui/views/crontab/templates/crontab.mak:15
+msgid "Scheduled Jobs"
+msgstr "Дела по расписанию"
+
+#: concerto_gui/views/crontab/templates/crontab.mak:18
+msgid "Schedule"
+msgstr "Расписание"
+
+#: concerto_gui/views/crontab/templates/crontab.mak:19
+msgid "User"
+msgstr "Пользователь"
+
+#: concerto_gui/views/crontab/templates/crontab.mak:20
+msgid "Last execution"
+msgstr "Последнее исполнение"
+
+#: concerto_gui/views/crontab/templates/crontab.mak:21
+msgid "Next execution"
+msgstr "Следующее исполнение"
+
+#: concerto_gui/views/crontab/templates/crontab.mak:69
+msgid "Disable"
+msgstr "Выключить"
+
+#: concerto_gui/views/crontab/templates/crontab.mak:70
+msgid "Enable"
+msgstr "Включить"
+
+#: concerto_gui/views/custom/__init__.py:35
+msgid "Embedding of external websites"
+msgstr "Встраивание внешних вебсайтов"
+
+#: concerto_gui/views/custom/__init__.py:65
+msgid "Could not load tabs"
+msgstr "Невозможно загрузить"
+
+#: concerto_gui/views/custom/__init__.py:65
+msgid "A URL should be defined for each tab"
+msgstr ""
+
+#: concerto_gui/views/datasearch/alert.py:119
+#, fuzzy
+msgid "Alert listing page"
+msgstr "Список событий"
+
+#: concerto_gui/views/datasearch/alert.py:124
+#, fuzzy
+msgid "Aggregated alerts"
+msgstr "Событие корреляции"
+
+#: concerto_gui/views/datasearch/alert.py:135
+#: concerto_gui/views/messagesummary/messagesummary.py:751
+msgid "Severity"
+msgstr "Важность"
+
+#: concerto_gui/views/datasearch/alert.py:136
+#: concerto_gui/views/datasearch/heartbeat.py:60
+#: concerto_gui/views/datasearch/log.py:57
+msgid "Date"
+msgstr "Дата"
+
+#: concerto_gui/views/datasearch/alert.py:138
+msgid "Source"
+msgstr "Источник"
+
+#: concerto_gui/views/datasearch/alert.py:139
+msgid "Target"
+msgstr "Цель"
+
+#: concerto_gui/views/datasearch/alert.py:140
+msgid "Analyzer"
+msgstr "Анализатор"
+
+#: concerto_gui/views/datasearch/alert.py:143
+msgid "Delete the selected alerts?"
+msgstr "Удалить выбранные события?"
+
+#: concerto_gui/views/datasearch/alert.py:201
+#: concerto_gui/views/idmefnav/__init__.py:45
+#: concerto_gui/views/messagesummary/templates/messagesummary.mak:92
+msgid "IDMEF"
+msgstr "IDMEF"
+
+#: concerto_gui/views/datasearch/alert.py:226
+msgid "Minimal severity"
+msgstr ""
+
+#: concerto_gui/views/datasearch/alert.py:227
+#, fuzzy
+msgid "Low severity"
+msgstr "Важность"
+
+#: concerto_gui/views/datasearch/alert.py:228
+#, fuzzy
+msgid "Medium severity"
+msgstr "Важность"
+
+#: concerto_gui/views/datasearch/alert.py:229
+#, fuzzy
+msgid "High severity"
+msgstr "Важность"
+
+#: concerto_gui/views/datasearch/datasearch.py:48
+msgid "minute"
+msgstr "минута"
+
+#: concerto_gui/views/datasearch/datasearch.py:48
+msgid "hour"
+msgstr "час"
+
+#: concerto_gui/views/datasearch/datasearch.py:48
+msgid "day"
+msgstr "день"
+
+#: concerto_gui/views/datasearch/datasearch.py:48
+msgid "month"
+msgstr "месяц"
+
+#: concerto_gui/views/datasearch/datasearch.py:48
+msgid "year"
+msgstr "год"
+
+#: concerto_gui/views/datasearch/datasearch.py:189
+#, fuzzy
+msgid "Time group error"
+msgstr "Внутренняя ошибка Prelude"
+
+#: concerto_gui/views/datasearch/datasearch.py:189
+msgid "Only one time unit can be specified in a groupby query"
+msgstr ""
+
+#: concerto_gui/views/datasearch/datasearch.py:429
+msgid "Forensic"
+msgstr ""
+
+#: concerto_gui/views/datasearch/datasearch.py:429
+msgid "Dashboard"
+msgstr "Доска диаграмм"
+
+#: concerto_gui/views/datasearch/datasearch.py:507
+msgid "CSV export"
+msgstr ""
+
+#: concerto_gui/views/datasearch/datasearch.py:651
+msgid "General"
+msgstr "Главная"
+
+#: concerto_gui/views/datasearch/heartbeat.py:48
+#, fuzzy
+msgid "Heartbeat listing page"
+msgstr "Анализ событий состояния"
+
+#: concerto_gui/views/datasearch/heartbeat.py:53
+#, fuzzy
+msgid "Aggregated heartbeats"
+msgstr "Последнее время событий состояния"
+
+#: concerto_gui/views/datasearch/heartbeat.py:61
+msgid "Agent"
+msgstr "Агент"
+
+#: concerto_gui/views/datasearch/heartbeat.py:66
+#, fuzzy
+msgid "Delete the selected heartbeats?"
+msgstr "Удалить выбранные события?"
+
+#: concerto_gui/views/datasearch/idmef.py:46
+#, fuzzy
+msgid "See IDMEF details"
+msgstr "Сигналы тревоги"
+
+#: concerto_gui/views/datasearch/log.py:44
+#, fuzzy
+msgid "Log listing page"
+msgstr "Страница отображения событий уровня эксперта"
+
+#: concerto_gui/views/datasearch/log.py:46
+msgid "LOG_VIEW"
+msgstr "LOG_VIEW (Просмотр логов)"
+
+#: concerto_gui/views/datasearch/log.py:51
+msgid "Aggregated logs"
+msgstr ""
+
+#: concerto_gui/views/datasearch/log.py:76
+msgid "Search in logs"
+msgstr ""
+
+#: concerto_gui/views/datasearch/log.py:77
+msgid "View logs"
+msgstr "Просмотр логов"
+
+#: concerto_gui/views/datasearch/log.py:82
+msgid "Log"
+msgstr "Лог"
+
+#: concerto_gui/views/datasearch/log.py:85
+msgid "Archive"
+msgstr "Архив"
+
+#: concerto_gui/views/datasearch/log.py:105
+msgid "Context"
+msgstr "Контекст"
+
+#: concerto_gui/views/datasearch/log.py:116
+#, fuzzy
+msgid "Syslog export"
+msgstr "%s отчет"
+
+#: concerto_gui/views/datasearch/templates/details.mak:26
+#, python-format
+msgid "Group by %s"
+msgstr "Группировать по %s"
+
+#: concerto_gui/views/datasearch/templates/details.mak:30
+#: concerto_gui/views/datasearch/templates/forensic.mak:245
+msgid "Add to search"
+msgstr "Добавить к поиску"
+
+#: concerto_gui/views/datasearch/templates/details.mak:31
+#: concerto_gui/views/datasearch/templates/forensic.mak:246
+msgid "Exclude from search"
+msgstr "Удалить из поиска"
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:8
+msgid "Fields"
+msgstr ""
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:9
+msgid "Query history"
+msgstr ""
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:34
+msgid "Count"
+msgstr "Счет"
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:79
+msgid "Chart type"
+msgstr "Тип диаграммы"
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:89
+#: concerto_gui/views/statistics/templates/statistics.mak:43
+msgid "Limit"
+msgstr "Лимит"
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:105
+msgid "Action mode"
+msgstr ""
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:112
+msgid "Condensed mode"
+msgstr ""
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:120
+msgid "Expert mode"
+msgstr ""
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:133
+msgid "Search mode"
+msgstr ""
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:137
+#: concerto_gui/views/datasearch/templates/forensic.mak:243
+msgid "Search"
+msgstr "Искать"
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:139
+msgid "Reset search"
+msgstr ""
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:149
+#: concerto_gui/views/datasearch/templates/forensic.mak:248
+msgid "Group by"
+msgstr "Группировать по"
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:150
+msgid "Select your field"
+msgstr ""
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:151
+#, fuzzy
+msgid "Time values"
+msgstr "Значение"
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:156
+#, python-format
+msgid "%s fields"
+msgstr ""
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:193
+#: concerto_gui/views/statistics/alertstats.py:50
+msgid "Timeline"
+msgstr "Временная шкала"
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:247
+msgid "New search"
+msgstr "Новый поиск"
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:257
+#: concerto_gui/views/messagesummary/messagesummary.py:1041
+msgid "Actions"
+msgstr "Действие"
+
+#: concerto_gui/views/datasearch/templates/forensic.mak:270
+msgid "Informations"
+msgstr "Информация"
+
+#: concerto_gui/views/datasearch/templates/infos.mak:3
+msgid "Field"
+msgstr ""
+
+#: concerto_gui/views/datasearch/templates/infos.mak:9
+#, fuzzy
+msgid "Occurrence"
+msgstr "Источник"
+
+#: concerto_gui/views/idmefnav/__init__.py:37
+msgid "IDMEF navigator"
+msgstr ""
+
+#: concerto_gui/views/idmefnav/__init__.py:45
+msgid "Help"
+msgstr "Помощь"
+
+#: concerto_gui/views/idmefnav/templates/idmefnav.mak:12
+msgid "Children"
+msgstr ""
+
+#: concerto_gui/views/idmefnav/templates/idmefnav.mak:20
+#, fuzzy
+msgid "Aggregates"
+msgstr "Событие корреляции"
+
+#: concerto_gui/views/idmefnav/templates/idmefnav.mak:36
+msgid "Attributes"
+msgstr ""
+
+#: concerto_gui/views/idmefnav/templates/idmefnav.mak:54
+msgid "Rank"
+msgstr ""
+
+#: concerto_gui/views/idmefnav/templates/idmefnav.mak:55
+msgid "Keyword"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/__init__.py:13
+msgid "Detailed alert and heartbeat page"
+msgstr "Детализированная страница событий и событий состояния"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:296
+#: concerto_gui/views/messagesummary/messagesummary.py:591
+msgid "Code"
+msgstr "Код"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:297
+msgid "Data length"
+msgstr "Длина данных"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:298
+msgid "Data"
+msgstr "Данные"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:372
+#, python-format
+msgid "(agent local time: %s)"
+msgstr "(Локальное время сенсора: %s)"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:379
+#: concerto_gui/views/messagesummary/messagesummary.py:848
+msgid "Create time"
+msgstr "Время создания"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:382
+msgid "Detect time"
+msgstr "Время обнаружения"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:387
+msgid "Analyzer time"
+msgstr "Время анализатора"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:393
+msgid "Process"
+msgstr "Процесс"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:394
+msgid "Process Path"
+msgstr "Путь процесса"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:395
+msgid "Process PID"
+msgstr "PID процесса"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:422
+msgid "Node name (resolved)"
+msgstr "Имя узла"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:433
+msgid "Analyzerid"
+msgstr "Идентификатор анализатора"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:437
+msgid "Manufacturer"
+msgstr "Производитель"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:445
+msgid "Operating System"
+msgstr "Операционная система"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:463
+#, python-format
+msgid "Analyzer Path (%d not shown)"
+msgstr "Путь анализатора (%d не показан)"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:470
+#: concerto_gui/views/messagesummary/messagesummary.py:1050
+#: concerto_gui/views/messagesummary/messagesummary.py:1123
+#, python-format
+msgid "Analyzer #%d"
+msgstr "Анализатор #%d"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:480
+msgid "Additional data"
+msgstr "Дополнительные данные"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:483
+#: concerto_gui/views/messagesummary/messagesummary.py:730
+msgid "Meaning"
+msgstr "Смысл"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:484
+msgid "Value"
+msgstr "Значение"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:544
+#: concerto_gui/views/messagesummary/messagesummary.py:565
+msgid "Header length"
+msgstr "Длина заголовка"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:545
+msgid "TOS"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:546
+#: concerto_gui/views/messagesummary/messagesummary.py:584
+msgid "Length"
+msgstr "Длина"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:547
+#: concerto_gui/views/messagesummary/messagesummary.py:593
+msgid "Id"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:551
+msgid "Ip offset"
+msgstr "Смещение Ip"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:552
+msgid "TTL"
+msgstr "TTL"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:553
+#: concerto_gui/views/messagesummary/messagesummary.py:939
+#: concerto_gui/views/messagesummary/messagesummary.py:942
+#: concerto_gui/views/messagesummary/messagesummary.py:945
+msgid "Protocol"
+msgstr "Протокол"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:554
+#: concerto_gui/views/messagesummary/messagesummary.py:576
+#: concerto_gui/views/messagesummary/messagesummary.py:585
+#: concerto_gui/views/messagesummary/messagesummary.py:592
+msgid "Checksum"
+msgstr "Контрольная сумма"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:555
+msgid "Source address"
+msgstr "Адрес источника"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:556
+msgid "Target address"
+msgstr "Адрес назначения"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:566
+msgid "Reserved"
+msgstr "Зарезервировано"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:575
+msgid "Window"
+msgstr "Окно"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:577
+msgid "URP"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:590
+#: concerto_gui/views/messagesummary/messagesummary.py:757
+#: concerto_gui/views/messagesummary/messagesummary.py:790
+#: concerto_gui/views/messagesummary/messagesummary.py:809
+msgid "Type"
+msgstr "Тип"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:594
+msgid "Seq #"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:595
+msgid "Mask"
+msgstr "Маска"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:596
+msgid "Gateway Address"
+msgstr "Адрес шлюза"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:597
+msgid "Num address"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:598
+msgid "Wpa"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:599
+msgid "Lifetime"
+msgstr "Время жизни"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:600
+msgid "Otime"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:601
+msgid "Rtime"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:602
+msgid "Ttime"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:608
+#: concerto_gui/views/messagesummary/messagesummary.py:1097
+msgid "Payload"
+msgstr "Полезная нагрузка"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:661
+msgid "Alert details"
+msgstr "Сигналы тревоги"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:666
+#, python-format
+msgid "%d linked alerts missing (probably deleted)"
+msgstr "%d связанных событий отсутствует (вероятно удалено)"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:670
+#, fuzzy, python-format
+msgid "%d linked alerts omitted"
+msgstr "%d связанных событий отсутствует (вероятно удалено)"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:687
+#: concerto_gui/views/messagesummary/messagesummary.py:1004
+msgid "Correlation Alert"
+msgstr "Событие корреляции"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:693
+msgid "Correlated Alerts"
+msgstr "Событие корреляции"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:694
+#: concerto_gui/views/messagesummary/messagesummary.py:711
+msgid "Source Analyzer"
+msgstr "Анализатор источника"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:704
+#: concerto_gui/views/messagesummary/messagesummary.py:1007
+msgid "Tool Alert"
+msgstr "Событие со средства защиты"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:710
+msgid "Linked Alerts"
+msgstr "Связанноые события"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:721
+#: concerto_gui/views/messagesummary/templates/messagesummary.mak:93
+msgid "Text"
+msgstr "Текст"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:723
+msgid "Ident"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:728
+msgid "Origin"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:754
+msgid "Completion"
+msgstr "Завершенность"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:787
+msgid "User category"
+msgstr "Категория пользователя"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:792
+#: concerto_gui/views/messagesummary/messagesummary.py:811
+msgid "Number"
+msgstr "Номер"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:793
+msgid "Tty"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:812
+msgid "Permission"
+msgstr "Привилегии"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:834
+msgid "Change time"
+msgstr "Изменение времени"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:835
+msgid "Inode Number"
+msgstr "Номер inode"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:836
+msgid "Major device"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:837
+msgid "Minor device"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:838
+msgid "C Major device"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:839
+msgid "C Minor device"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:843
+#, python-format
+msgid "Target file %s"
+msgstr "Целевой файл %s"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:843
+msgid "category"
+msgstr "Категория"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:847
+msgid "Path"
+msgstr "Путь"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:849
+msgid "Modify time"
+msgstr "Время модификации"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:850
+msgid "Access time"
+msgstr "Время доступа"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:851
+msgid "Data size"
+msgstr "Размер данных"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:852
+msgid "Disk size"
+msgstr "Размер диска"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:871
+msgid "Web Service"
+msgstr "Web сервис"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:874
+msgid "Url"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:875
+msgid "Cgi"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:876
+msgid "Http Method"
+msgstr "Метод http"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:879
+msgid "CGI Argument"
+msgstr "Аргумент CGI"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:888
+msgid "SNMP Service"
+msgstr "SNMP-сервис"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:891
+msgid "oid"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:892
+msgid "messageProcessingModel"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:893
+msgid "securityModel"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:894
+msgid "securityName"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:895
+msgid "securityLevel"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:896
+msgid "contextName"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:897
+msgid "contextEngineID"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:898
+msgid "command"
+msgstr "команда"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:910
+#: concerto_gui/views/messagesummary/messagesummary.py:912
+msgid "Port"
+msgstr "Порт"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:932
+msgid "PortList"
+msgstr "Порт"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:935
+msgid "ip_version"
+msgstr "Версия"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:971
+#, python-format
+msgid "Source(%d)"
+msgstr "Источник(%d)"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:986
+#, python-format
+msgid "Target(%d)"
+msgstr "Цель(%d)"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:1010
+msgid "Overflow Alert"
+msgstr "Событие переполнения"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:1013
+msgid "Alert"
+msgstr "Событие"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:1033
+msgid "MessageID"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:1080
+msgid "Network centric information"
+msgstr "Информация об учетной записи"
+
+#: concerto_gui/views/messagesummary/messagesummary.py:1102
+msgid "ASCII Payload"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/messagesummary.py:1120
+msgid "Heartbeat"
+msgstr "события состояния"
+
+#: concerto_gui/views/messagesummary/templates/messagesummary.mak:94
+msgid "JSON"
+msgstr ""
+
+#: concerto_gui/views/messagesummary/templates/messagesummary.mak:100
+msgid "Summary"
+msgstr "Итого"
+
+#: concerto_gui/views/riskoverview/__init__.py:34
+msgid "Top page risk overview"
+msgstr ""
+
+#: concerto_gui/views/statistics/__init__.py:10
+#, fuzzy
+msgid "Statistics pages"
+msgstr "Анализ событий состояния"
+
+#: concerto_gui/views/statistics/alertstats.py:35
+#, fuzzy
+msgid "Severities"
+msgstr "Важность"
+
+#: concerto_gui/views/statistics/alertstats.py:39
+msgid ""
+"This graph shows the severities of the reported alerts. There are 5 "
+"existing severities: n/a, info, low, medium, and high."
+msgstr ""
+
+#: concerto_gui/views/statistics/alertstats.py:43
+#: concerto_gui/views/statistics/alertstats.py:306
+msgid "Top {limit} Analyzer Node Locations"
+msgstr "Топ {limit} расположений анализаторов"
+
+#: concerto_gui/views/statistics/alertstats.py:47
+msgid ""
+"This graph shows the most recurrent locations of the analyzers reporting "
+"an alert."
+msgstr ""
+
+#: concerto_gui/views/statistics/alertstats.py:54
+msgid "This graph shows the evolution of the alerts severities over time."
+msgstr ""
+
+#: concerto_gui/views/statistics/alertstats.py:57
+#: concerto_gui/views/statistics/alertstats.py:244
+msgid "Top {limit} Source Addresses"
+msgstr "Топ {limit} адресов источников"
+
+#: concerto_gui/views/statistics/alertstats.py:61
+msgid "This graph shows the most common alert source IP addresses."
+msgstr ""
+
+#: concerto_gui/views/statistics/alertstats.py:64
+#: concerto_gui/views/statistics/alertstats.py:256
+msgid "Top {limit} Targeted Addresses"
+msgstr "Топ {limit} адресов целей"
+
+#: concerto_gui/views/statistics/alertstats.py:68
+msgid "This graph shows the most common alert target IP addresses."
+msgstr ""
+
+#: concerto_gui/views/statistics/alertstats.py:71
+#: concerto_gui/views/statistics/alertstats.py:216
+msgid "Top {limit} Classifications"
+msgstr "Топ {limit} классификаций"
+
+#: concerto_gui/views/statistics/alertstats.py:75
+msgid ""
+"This graph shows the most recurrent classifications of the reported "
+"alerts. The classification is a short description of the alert."
+msgstr ""
+
+#: concerto_gui/views/statistics/alertstats.py:79
+#: concerto_gui/views/statistics/alertstats.py:210
+msgid "Top {limit} Classifications Trend"
+msgstr "Топ {limit} тенденций классификаций"
+
+#: concerto_gui/views/statistics/alertstats.py:83
+msgid "This graph shows the evolution of the alerts classifications over time."
+msgstr ""
+
+#: concerto_gui/views/statistics/alertstats.py:86
+#: concerto_gui/views/statistics/alertstats.py:296
+msgid "Top {limit} Analyzer Classes"
+msgstr "Топ {limit} классов анализатора"
+
+#: concerto_gui/views/statistics/alertstats.py:90
+msgid ""
+"This graph shows the most recurrent types of the first analyzer reporting"
+" an alert. For further details on existing types, please visit "
+"https://www.prelude-"
+"siem.org/projects/prelude/wiki/DevelAgentClassification"
+msgstr ""
+
+#: concerto_gui/views/statistics/alertstats.py:95
+#: concerto_gui/views/statistics/alertstats.py:278
+msgid "Top {limit} Analyzer Classes Trend"
+msgstr "Топ {limit} тенденций классов анализатора"
+
+#: concerto_gui/views/statistics/alertstats.py:99
+msgid ""
+"This graph shows the evolution of the type of the analyzers, reporting an"
+" alert, over time."
+msgstr ""
+
+#: concerto_gui/views/statistics/alertstats.py:160
+msgid "Unknown service"
+msgstr "Неизвестный сервис"
+
+#: concerto_gui/views/statistics/alertstats.py:190
+msgid "Statistics page about alerts"
+msgstr ""
+
+#: concerto_gui/views/statistics/alertstats.py:221
+msgid "Top {limit} Alert References"
+msgstr "Топ {limit} упоминаний событий"
+
+#: concerto_gui/views/statistics/alertstats.py:226
+msgid "Alert: Severity"
+msgstr "События: Важность"
+
+#: concerto_gui/views/statistics/alertstats.py:231
+msgid "Top {limit} Alert Impact Types"
+msgstr "Топ {limit} типов воздействия событий"
+
+#: concerto_gui/views/statistics/alertstats.py:238
+msgid "Top {limit} Sources Trend"
+msgstr "Топ {limit} тенденций источников"
+
+#: concerto_gui/views/statistics/alertstats.py:249
+msgid "Top {limit} Source Users"
+msgstr "Топ {limit} пользователей источников"
+
+#: concerto_gui/views/statistics/alertstats.py:261
+msgid "Top {limit} Targeted Ports"
+msgstr "Топ {limit} портов целей"
+
+#: concerto_gui/views/statistics/alertstats.py:266
+#, fuzzy
+msgid "Top {limit} Targeted Users"
+msgstr "Топ {limit} пользователей целей"
+
+#: concerto_gui/views/statistics/alertstats.py:271
+msgid "Top {limit} Targeted Processes"
+msgstr ""
+
+#: concerto_gui/views/statistics/alertstats.py:283
+#, fuzzy
+msgid "Top {limit} Analyzers"
+msgstr "Топ {limit} анализаторов"
+
+#: concerto_gui/views/statistics/alertstats.py:291
+msgid "Top {limit} Analyzer Models"
+msgstr "Топ {limit} моделей анализаторов"
+
+#: concerto_gui/views/statistics/alertstats.py:301
+msgid "Top {limit} Analyzer Node Addresses"
+msgstr "Топ {limit} адресов нод анализаторов"
+
+#: concerto_gui/views/statistics/alertstats.py:314
+msgid "Number of source addresses"
+msgstr "Количество адресов источника"
+
+#: concerto_gui/views/statistics/alertstats.py:321
+msgid "Number of target addresses"
+msgstr "Количество адресов назначения"
+
+#: concerto_gui/views/statistics/alertstats.py:328
+msgid "Number of simple alerts"
+msgstr "Количество простых событий"
+
+#: concerto_gui/views/statistics/alertstats.py:335
+msgid "Number of alerts per analyzer type"
+msgstr "Количество событий по типам анализатора"
+
+#: concerto_gui/views/statistics/alertstats.py:341
+msgid "Number of alerts"
+msgstr "Количество событий"
+
+#: concerto_gui/views/statistics/alertstats.py:347
+msgid "Number of correlation alerts"
+msgstr "Количество событий корреляции"
+
+#: concerto_gui/views/statistics/alertstats.py:354
+msgid "Number of machines/devices"
+msgstr "Количество устройств"
+
+#: concerto_gui/views/statistics/alertstats.py:361
+msgid "Number of machines/devices per analyzer type (HIDS, NIDS)"
+msgstr "Количество событий по типам анализатора (HIDS, NIDS)"
+
+#: concerto_gui/views/statistics/alertstats.py:368
+msgid "Categorizations"
+msgstr "Категории"
+
+#: concerto_gui/views/statistics/alertstats.py:369
+msgid "Sources"
+msgstr "Источники"
+
+#: concerto_gui/views/statistics/alertstats.py:370
+msgid "Targets"
+msgstr "Цели"
+
+#: concerto_gui/views/statistics/alertstats.py:371
+msgid "Analyzers"
+msgstr "Анализаторы"
+
+#: concerto_gui/views/statistics/alertstats.py:372
+msgid "Metrology"
+msgstr "Метрология"
+
+#: concerto_gui/views/statistics/alertstats.py:382
+msgid "Statistics"
+msgstr "Статистика"
+
+#: concerto_gui/views/statistics/statistics.py:45
+msgid "title"
+msgstr "заголовок"
+
+#: concerto_gui/views/statistics/statistics.py:131
+#, fuzzy
+msgid "Statistics error"
+msgstr "Статистика"
+
+#: concerto_gui/views/statistics/statistics.py:131
+#, fuzzy, python-format
+msgid "Could not find chart class: %s"
+msgstr "Невозможно загрузить"
+
+#: concerto_gui/views/statistics/statistics.py:180
+#, fuzzy
+msgid "Invalid widget"
+msgstr "Неверное отображение"
+
+#: concerto_gui/views/statistics/statistics.py:180
+#, fuzzy
+msgid "The widget category does not exist"
+msgstr "Фильтр '%s' не существует"
+
+#: concerto_gui/views/statistics/templates/statistics.mak:36
+msgid "Failed to import the dashboard."
+msgstr ""
+
+#: concerto_gui/views/statistics/templates/widget.mak:12
+#, fuzzy
+msgid "Delete this widget?"
+msgstr "Добавить виджет"
+
+#: concerto_gui/views/usermanagement/__init__.py:14
+msgid "User and group management pages"
+msgstr "страница управления пользователями и группами"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:27
+#: concerto_gui/views/usermanagement/usermanagement.py:29
+msgid "Access control"
+msgstr "Контроль доступа"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:27
+#: concerto_gui/views/usermanagement/templates/userlisting.mak:4
+msgid "Users"
+msgstr "Пользователи"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:28
+msgid "GROUP_MANAGEMENT"
+msgstr "GROUP_MANAGEMENT (Управление группами)"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:29
+#: concerto_gui/views/usermanagement/templates/userlisting.mak:8
+msgid "Groups"
+msgstr "Группы"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:94
+#, python-format
+msgid "Edit user %s"
+msgstr "Изменение пользователя %s"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:112
+msgid "Access denied to users modification"
+msgstr "Доступ к изменению пользователей запрещен"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:124
+#, python-format
+msgid "Edit group %s"
+msgstr "Изменение группы %s"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:142
+msgid "Access denied to groups modification"
+msgstr "Доступ к изменению групп запрещен"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:229
+msgid "Invalid user"
+msgstr "Неверный пользователь"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:229
+#, fuzzy
+msgid "Specified user does not exist"
+msgstr "Указанный язык не существует"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:232
+msgid "Cannot modify other users settings"
+msgstr "Невозможно изменить прочие настройки пользователя"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:235
+msgid "Invalid Language"
+msgstr "Неверный язык"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:235
+msgid "Specified language does not exist"
+msgstr "Выбранный язык не существует"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:238
+msgid "Invalid Timezone"
+msgstr "неверная временная зона"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:238
+msgid "Specified timezone does not exist"
+msgstr "Выбранная временная зона не существует"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:241
+#: concerto_gui/views/usermanagement/usermanagement.py:280
+msgid "Password error"
+msgstr "Ошибка пароля"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:241
+msgid "Password mismatch"
+msgstr "Пароли не соответствуют"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:280
+msgid "Invalid password specified"
+msgstr "Указан неверный пароль"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:294
+#: concerto_gui/views/usermanagement/usermanagement.py:297
+#: concerto_gui/views/usermanagement/usermanagement.py:301
+#, fuzzy
+msgid "Could not create user"
+msgstr "Невозможно сохранить фильтр"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:294
+#, fuzzy
+msgid "Username required"
+msgstr "Не указано имя пользователя"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:297
+msgid "Username cannot start with a slash"
+msgstr ""
+
+#: concerto_gui/views/usermanagement/usermanagement.py:301
+#, python-format
+msgid "User %s already exists"
+msgstr "Пользователь %s уже существует"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:307
+msgid "My account"
+msgstr "Моя учетная запись"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:324
+msgid "Invalid User"
+msgstr "Неверный пользователь"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:324
+#, python-format
+msgid "Requested user '%s' does not exist"
+msgstr "запрощенный пользователь '%s' не существует"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:327
+msgid "Access denied to other users settings"
+msgstr "Доступ к прочим настройкам пользователей запрещен"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:398
+msgid "Access denied to group settings"
+msgstr "Доступ к групповым настройкам запрещен"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:415
+#: concerto_gui/views/usermanagement/usermanagement.py:418
+#: concerto_gui/views/usermanagement/usermanagement.py:422
+#, fuzzy
+msgid "Could not create group"
+msgstr "Создать группу"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:415
+msgid "No group name provided"
+msgstr "Не указано имя группы"
+
+#: concerto_gui/views/usermanagement/usermanagement.py:418
+msgid "Group name cannot start with a slash"
+msgstr ""
+
+#: concerto_gui/views/usermanagement/usermanagement.py:422
+#, python-format
+msgid "Group %s already exists"
+msgstr "Группа %s уже существует"
+
+#: concerto_gui/views/usermanagement/templates/userlisting.mak:6
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:196
+msgid "Create user"
+msgstr "Создать пользователя"
+
+#: concerto_gui/views/usermanagement/templates/userlisting.mak:7
+#, fuzzy
+msgid "Delete the selected users?"
+msgstr "Удалить выбранные наборы правил?"
+
+#: concerto_gui/views/usermanagement/templates/userlisting.mak:9
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:35
+msgid "Group Name"
+msgstr "Имя группы"
+
+#: concerto_gui/views/usermanagement/templates/userlisting.mak:10
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:198
+msgid "Create group"
+msgstr "Создать группу"
+
+#: concerto_gui/views/usermanagement/templates/userlisting.mak:11
+#, fuzzy
+msgid "Delete the selected groups?"
+msgstr "Удалить выбранные правила?"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:27
+msgid "Account information"
+msgstr "Информация об учетной записи"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:28
+msgid "Login:"
+msgstr "Имя пользователя:"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:29
+msgid "Groups:"
+msgstr "Группы:"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:32
+msgid "Group information"
+msgstr "Информация о группе"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:33
+msgid "Group Name:"
+msgstr "Имя группы:"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:34
+msgid "Members:"
+msgstr "Члены группы:"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:63
+msgid "info"
+msgstr "информационный"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:86
+msgid "Email:"
+msgstr "Эл. адрес:"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:88
+msgid "Email"
+msgstr "Эл. адрес"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:93
+msgid "Language:"
+msgstr "Язык:"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:104
+msgid "Theme:"
+msgstr "Тема:"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:115
+msgid "Timezone:"
+msgstr "Часовой пояс:"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:156
+msgid "Permissions:"
+msgstr "Права:"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:165
+msgid "Check All"
+msgstr "Отметить все"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:173
+msgid "Current password:"
+msgstr "Текущий пароль:"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:175
+msgid "Current password"
+msgstr "Текущий пароль"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:180
+msgid "New password:"
+msgstr "Новый пароль:"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:182
+msgid "New password"
+msgstr "Новый пароль"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:186
+msgid "Confirm new password:"
+msgstr "Подтвердить новый пароль:"
+
+#: concerto_gui/views/usermanagement/templates/usersettings.mak:188
+msgid "Confirm new password"
+msgstr "Подтвердить новый пароль"
+
+#: scripts/concerto_gui-cli:60
+#, fuzzy
+msgid "Unknown command"
+msgstr "команда"
+
+#: scripts/concerto_gui-cli:68
+#, python-format
+msgid "An unexpected error occurred: %s"
+msgstr ""
+
+#: scripts/concerto_gui-cli:163
+msgid "Create an object of the specified type"
+msgstr ""
+
+#: scripts/concerto_gui-cli:166
+msgid "Delete an object of the specified type"
+msgstr ""
+
+#: scripts/concerto_gui-cli:169
+msgid "Import objects of the specified type from files"
+msgstr ""
+
+#: scripts/concerto_gui-cli:172
+msgid "List objects of the specified type"
+msgstr ""
+
+#: scripts/concerto_gui-cli:175
+msgid "Synchronize objects of the specified type"
+msgstr ""
+
+#: scripts/concerto_gui-cli:178
+msgid "Update objects of the specified type"
+msgstr ""
+
+#: scripts/concerto_gui-cli:216
+msgid "Prewikka command-line tool"
+msgstr ""
+
+#: scripts/concerto_gui-cli:217
+msgid "name of the user"
+msgstr ""
+
+#: scripts/concerto_gui-cli:218 scripts/concerto_gui-crontab:99
+#: scripts/concerto_gui-httpd:93
+#, python-format
+msgid "configuration file to use (default: %(default)s)"
+msgstr ""
+
+#: scripts/concerto_gui-cli:219
+msgid "command to execute"
+msgstr ""
+
+#: scripts/concerto_gui-cli:220
+msgid "enable debugging output"
+msgstr ""
+
+#: scripts/concerto_gui-cli:227
+msgid "concerto_gui-cli must be executed as the concerto_gui user"
+msgstr ""
+
+#: scripts/concerto_gui-cli:252
+#, python-format
+msgid "Prewikka command-line tool (%s)"
+msgstr ""
+
+#: scripts/concerto_gui-cli:253
+msgid "Type \"help\" or \"?\" to list commands"
+msgstr ""
+
+#: scripts/concerto_gui-crontab:100
+msgid "run as a system daemon"
+msgstr ""
+
+#: scripts/concerto_gui-crontab:101 scripts/concerto_gui-httpd:96
+msgid "show this help message and exit"
+msgstr ""
+
+#: scripts/concerto_gui-crontab:102 scripts/concerto_gui-httpd:97
+msgid "show program's version number and exit"
+msgstr ""
+
+#: scripts/concerto_gui-httpd:88
+msgid "root where the server is accessible"
+msgstr ""
+
+#: scripts/concerto_gui-httpd:89
+#, python-format
+msgid "IP to bind to (default: %(default)s)"
+msgstr ""
+
+#: scripts/concerto_gui-httpd:90
+#, python-format
+msgid "port number to use (default: %(default)d)"
+msgstr ""
+
+#: scripts/concerto_gui-httpd:91
+msgid "SSL private key to use (default: no SSL)"
+msgstr ""
+
+#: scripts/concerto_gui-httpd:92
+msgid "SSL certificate to use (default: no SSL)"
+msgstr ""
+
+#: scripts/concerto_gui-httpd:95
+#, python-format
+msgid ""
+"number of processes to use. Default value matches the number of available"
+" CPUs (i.e. %d)"
+msgstr ""
+

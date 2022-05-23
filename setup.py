@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+# Copyright (C) 2022 Concerto SIEM. All Rights Reserved.
+# Author: Maxime Rebon <maxime.rebon@gmail.com>
+
 # Copyright (C) 2005-2020 CS GROUP - France. All Rights Reserved.
 # Author: Nicolas Delon <nicolas.delon@prelude-ids.com>
 #
@@ -41,20 +44,21 @@ LIBPRELUDEDB_REQUIRED_VERSION = "5.2.0"
 
 def init_siteconfig(conf_prefix, data_prefix):
     """
-    Initialize configuration file (prewikka/siteconfig.py).
+    Initialize configuration file (Concerto/siteconfig.py).
 
     :param str conf_prefix: configuration path
     :param str data_prefix: data path
     """
     configuration = (
-        ('tmp_dir', os.path.join(tempfile.gettempdir(), 'prewikka')),
+        ('tmp_dir', os.path.join(tempfile.gettempdir(), 'concerto_gui')),
         ('conf_dir', os.path.abspath(conf_prefix)),
         ('data_dir', os.path.abspath(data_prefix)),
         ('libprelude_required_version', LIBPRELUDE_REQUIRED_VERSION),
         ('libpreludedb_required_version', LIBPRELUDEDB_REQUIRED_VERSION),
     )
 
-    with open('prewikka/siteconfig.py', 'w') as config_file:
+    with open('concerto_gui/siteconfig.py', 'w') as config_file:
+
         for option, value in configuration:
             config_file.write("%s = '%s'\n" % (option, value))
 
@@ -62,7 +66,7 @@ def init_siteconfig(conf_prefix, data_prefix):
 class MyDistribution(Distribution):
     def __init__(self, attrs):
         try:
-            os.remove("prewikka/siteconfig.py")
+            os.remove("concerto_gui/siteconfig.py")
         except:
             pass
 
@@ -75,16 +79,16 @@ class my_install(install):
     def finalize_options(self):
         # if no prefix is given, configuration should go to /etc or in {prefix}/etc otherwise
         if self.prefix:
-            self.conf_prefix = self.prefix + "/etc/prewikka"
-            self.data_prefix = self.prefix + "/var/lib/prewikka"
+            self.conf_prefix = self.prefix + "/etc/concerto_gui"
+            self.data_prefix = self.prefix + "/var/lib/concerto_gui"
         else:
-            self.conf_prefix = "/etc/prewikka"
-            self.data_prefix = "/var/lib/prewikka"
+            self.conf_prefix = "/etc/concerto_gui"
+            self.data_prefix = "/var/lib/concerto_gui"
 
         install.finalize_options(self)
 
     def get_outputs(self):
-        tmp = [self.conf_prefix + "/prewikka.conf"] + install.get_outputs(self)
+        tmp = [self.conf_prefix + "/concerto_gui.conf"] + install.get_outputs(self)
         return tmp
 
     def install_conf(self):
@@ -101,11 +105,11 @@ class my_install(install):
         self.mkpath((self.root or "") + self.data_prefix)
 
     def install_wsgi(self):
-        share_dir = os.path.join(self.install_data, 'share', 'prewikka')
+        share_dir = os.path.join(self.install_data, 'share', 'concerto_gui')
         if not os.path.exists(share_dir):
             os.makedirs(share_dir)
 
-        ofile, copied = self.copy_file('scripts/prewikka.wsgi', share_dir)
+        ofile, copied = self.copy_file('scripts/concerto.wsgi', share_dir)
 
     def run(self):
         os.umask(0o22)
@@ -153,17 +157,17 @@ class build_custom(Command):
         pass
 
     def run(self):
-        style = os.path.join("prewikka", "htdocs", "css", "style.less")
+        style = os.path.join("concerto_gui", "htdocs", "css", "style.less")
 
         for less in glob("themes/*.less"):
-            css = os.path.join("prewikka", "htdocs", "css", "themes", "%s.css" % os.path.basename(less[:-5]))
+            css = os.path.join("concerto_gui", "htdocs", "css", "themes", "%s.css" % os.path.basename(less[:-5]))
             if self._need_compile([less, style], css):
                 io.open(css, "wb").write(subprocess.check_output(["lesscpy", "-I", less, style]))
 
 
-class PrewikkaTest(TestCommand):
+class ConcertoTest(TestCommand):
     """
-    Custom command for Prewikka test suite with pytest.
+    Custom command test suite with pytest.
 
     Based on
     https://docs.pytest.org/en/2.7.3/goodpractises.html#integration-with-setuptools-test-commands
@@ -193,7 +197,7 @@ class PrewikkaTest(TestCommand):
         sys.exit(errno)
 
 
-class PrewikkaCoverage(Command):
+class ConcertoCoverage(Command):
     """
     Coverage command.
     """
@@ -216,11 +220,11 @@ class PrewikkaCoverage(Command):
 
 
 setup(
-    name="prewikka",
+    name="concerto_gui",
     version="5.2.0",
-    maintainer="Prelude Team",
-    maintainer_email="support.prelude@csgroup.eu",
-    url="https://www.prelude-siem.com",
+    maintainer="Concerto",
+    maintainer_email="concerto-siem@gmail.com",
+    url="https://concerto-siem.github.io",
     packages=find_packages(exclude=[
         'tests',
         'tests.*'
@@ -229,57 +233,57 @@ setup(
         'Babel'
     ],
     entry_points={
-        'prewikka.renderer.backend': [
-            'ChartJS = prewikka.renderer.chartjs:ChartJSPlugin',
+        'concerto_gui.renderer.backend': [
+            'ChartJS = concerto_gui.renderer.chartjs:ChartJSPlugin',
         ],
-        'prewikka.renderer.type': [
-            'ChartJSBar = prewikka.renderer.chartjs.bar:ChartJSBarPlugin',
-            'ChartJSDoughnut = prewikka.renderer.chartjs.pie:ChartJSDoughnutPlugin',
-            'ChartJSPie = prewikka.renderer.chartjs.pie:ChartJSPiePlugin',
-            'ChartJSTimebar = prewikka.renderer.chartjs.timeline:ChartJSTimebarPlugin',
-            'ChartJSTimeline = prewikka.renderer.chartjs.timeline:ChartJSTimelinePlugin',
+        'concerto_gui.renderer.type': [
+            'ChartJSBar = concerto_gui.renderer.chartjs.bar:ChartJSBarPlugin',
+            'ChartJSDoughnut = concerto_gui.renderer.chartjs.pie:ChartJSDoughnutPlugin',
+            'ChartJSPie = concerto_gui.renderer.chartjs.pie:ChartJSPiePlugin',
+            'ChartJSTimebar = concerto_gui.renderer.chartjs.timeline:ChartJSTimebarPlugin',
+            'ChartJSTimeline = concerto_gui.renderer.chartjs.timeline:ChartJSTimelinePlugin',
         ],
-        'prewikka.dataprovider.backend': [
-            'ElasticsearchLog = prewikka.dataprovider.plugins.log.elasticsearch:ElasticsearchLogPlugin',
-            'IDMEFAlert = prewikka.dataprovider.plugins.idmef:IDMEFAlertPlugin',
-            'IDMEFHeartbeat = prewikka.dataprovider.plugins.idmef:IDMEFHeartbeatPlugin',
+        'concerto_gui.dataprovider.backend': [
+            'ElasticsearchLog = concerto_gui.dataprovider.plugins.log.elasticsearch:ElasticsearchLogPlugin',
+            'IDMEFAlert = concerto_gui.dataprovider.plugins.idmef:IDMEFAlertPlugin',
+            'IDMEFHeartbeat = concerto_gui.dataprovider.plugins.idmef:IDMEFHeartbeatPlugin',
         ],
-        'prewikka.dataprovider.type': [
-            'alert = prewikka.dataprovider.idmef:IDMEFAlertProvider',
-            'heartbeat = prewikka.dataprovider.idmef:IDMEFHeartbeatProvider',
-            'log = prewikka.dataprovider.log:LogAPI',
+        'concerto_gui.dataprovider.type': [
+            'alert = concerto_gui.dataprovider.idmef:IDMEFAlertProvider',
+            'heartbeat = concerto_gui.dataprovider.idmef:IDMEFHeartbeatProvider',
+            'log = concerto_gui.dataprovider.log:LogAPI',
         ],
-        'prewikka.plugins': [
+        'concerto_gui.plugins': [
         ],
-        'prewikka.auth': [
-            'DBAuth = prewikka.auth.dbauth:DBAuth',
+        'concerto_gui.auth': [
+            'DBAuth = concerto_gui.auth.dbauth:DBAuth',
         ],
-        'prewikka.session': [
-            'Anonymous = prewikka.session.anonymous:AnonymousSession',
-            'LoginForm = prewikka.session.loginform:LoginFormSession',
+        'concerto_gui.session': [
+            'Anonymous = concerto_gui.session.anonymous:AnonymousSession',
+            'LoginForm = concerto_gui.session.loginform:LoginFormSession',
         ],
-        'prewikka.views': [
-            'About = prewikka.views.about:About',
-            'AboutPlugin = prewikka.views.aboutplugin:AboutPlugin',
-            'AgentPlugin = prewikka.views.agents:AgentPlugin',
-            'AlertDataSearch = prewikka.views.datasearch.alert:AlertDataSearch',
-            'AlertStats = prewikka.views.statistics.alertstats:AlertStats',
-            'CrontabView = prewikka.views.crontab:CrontabView',
-            'Custom = prewikka.views.custom:Custom',
-            'FilterPlugin = prewikka.plugins.filter:FilterPlugin',
-            'HeartbeatDataSearch = prewikka.views.datasearch.heartbeat:HeartbeatDataSearch',
-            'IDMEFnav = prewikka.views.idmefnav:IDMEFNav',
-            'LogDataSearch = prewikka.views.datasearch.log:LogDataSearch',
-            'MessageSummary = prewikka.views.messagesummary:MessageSummary',
-            'RiskOverview = prewikka.views.riskoverview:RiskOverview',
-            'Statistics = prewikka.views.statistics:Statistics',
-            'UserManagement = prewikka.views.usermanagement:UserManagement',
-            'Warning = prewikka.plugins.warning:Warning',
+        'concerto_gui.views': [
+            'About = concerto_gui.views.about:About',
+            'AboutPlugin = concerto_gui.views.aboutplugin:AboutPlugin',
+            'AgentPlugin = concerto_gui.views.agents:AgentPlugin',
+            'AlertDataSearch = concerto_gui.views.datasearch.alert:AlertDataSearch',
+            'AlertStats = concerto_gui.views.statistics.alertstats:AlertStats',
+            'CrontabView = concerto_gui.views.crontab:CrontabView',
+            'Custom = concerto_gui.views.custom:Custom',
+            'FilterPlugin = concerto_gui.plugins.filter:FilterPlugin',
+            'HeartbeatDataSearch = concerto_gui.views.datasearch.heartbeat:HeartbeatDataSearch',
+            'IDMEFnav = concerto_gui.views.idmefnav:IDMEFNav',
+            'LogDataSearch = concerto_gui.views.datasearch.log:LogDataSearch',
+            'MessageSummary = concerto_gui.views.messagesummary:MessageSummary',
+            'RiskOverview = concerto_gui.views.riskoverview:RiskOverview',
+            'Statistics = concerto_gui.views.statistics:Statistics',
+            'UserManagement = concerto_gui.views.usermanagement:UserManagement',
+            'Warning = concerto_gui.plugins.warning:Warning',
         ],
-        'prewikka.updatedb': [
-            'prewikka = prewikka.sql',
-            'prewikka.auth.dbauth = prewikka.auth.dbauth.sql',
-            'prewikka.plugins.filter = prewikka.plugins.filter.sql'
+        'concerto_gui.updatedb': [
+            'concerto_gui = concerto_gui.sql',
+            'concerto_gui.auth.dbauth = concerto_gui.auth.dbauth.sql',
+            'concerto_gui.plugins.filter = concerto_gui.plugins.filter.sql'
         ]
     },
     package_data={
@@ -299,31 +303,31 @@ setup(
             "sql/*.py",
             "templates/*.mak"
         ],
-        'prewikka.auth.dbauth': ["sql/*.py"],
-        'prewikka.renderer.chartjs': ["htdocs/js/*.js"],
-        'prewikka.session.loginform': ["htdocs/css/*.css"],
-        'prewikka.views.about': ["htdocs/css/*.css", "htdocs/images/*.png"],
-        'prewikka.views.aboutplugin': ["htdocs/css/*.css"],
-        "prewikka.views.idmefnav": ["htdocs/yaml/*.yml", "htdocs/graph/*"],
-        'prewikka.views.riskoverview': ["htdocs/js/*.js"],
-        'prewikka.views.statistics': ["htdocs/js/*.js", "htdocs/css/*.css"],
-        'prewikka.views.usermanagement': ["htdocs/js/*.js", "htdocs/css/*.css"],
+        'concerto_gui.auth.dbauth': ["sql/*.py"],
+        'concerto_gui.renderer.chartjs': ["htdocs/js/*.js"],
+        'concerto_gui.session.loginform': ["htdocs/css/*.css"],
+        'concerto_gui.views.about': ["htdocs/css/*.css", "htdocs/images/*.png"],
+        'concerto_gui.views.aboutplugin': ["htdocs/css/*.css"],
+        "concerto_gui.views.idmefnav": ["htdocs/yaml/*.yml", "htdocs/graph/*"],
+        'concerto_gui.views.riskoverview': ["htdocs/js/*.js"],
+        'concerto_gui.views.statistics': ["htdocs/js/*.js", "htdocs/css/*.css"],
+        'concerto_gui.views.usermanagement': ["htdocs/js/*.js", "htdocs/css/*.css"],
     },
     scripts=[
-        "scripts/prewikka-cli",
-        "scripts/prewikka-crontab",
-        "scripts/prewikka-httpd"
+        "scripts/concerto-cli",
+        "scripts/concerto-crontab",
+        "scripts/concerto-httpd"
     ],
     conf_files={
-        "": ["conf/prewikka.conf", "conf/menu.yml"],
+        "": ["conf/concerto_gui.conf", "conf/menu.yml"],
         "conf.d": ["conf/plugins/*.conf"]
     },
     cmdclass={
         'build': build,
         'build_custom': build_custom,
-        'coverage': PrewikkaCoverage,
+        'coverage': ConcertoCoverage,
         'install': my_install,
-        'test': PrewikkaTest,
+        'test': ConcertoTest,
     },
     tests_require=[
         'pytest'
@@ -331,11 +335,11 @@ setup(
     distclass=MyDistribution,
     message_extractors={
         'scripts': [
-            ('prewikka-cli', 'python', None),
-            ('prewikka-httpd', 'python', None),
-            ('prewikka-crontab', 'python', None)
+            ('concerto-cli', 'python', None),
+            ('concerto-httpd', 'python', None),
+            ('concerto-crontab', 'python', None)
         ],
-        'prewikka': [
+        'concerto_gui': [
             ('**.py', 'python', None),
             ('**/templates/*.mak', 'mako', None)
         ]

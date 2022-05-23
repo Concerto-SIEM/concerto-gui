@@ -1,10 +1,10 @@
 [run]
 branch = True
 source =
-    prewikka
+    concerto_gui
 omit =
-    prewikka/siteconfig.py
-    prewikka/web/wsgi.py
+    concerto_gui/siteconfig.py
+    concerto_gui/web/wsgi.py
 
 [report]
 show_missing = True

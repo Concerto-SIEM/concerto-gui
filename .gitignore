@@ -1,10 +1,10 @@
 *~
 *.pyc
 build
-prewikka.egg-info
-prewikka/htdocs/css/themes/*.css
-prewikka/locale/*/LC_MESSAGES/*.mo
-prewikka/siteconfig.py
+concerto_gui.egg-info
+concerto_gui/htdocs/css/themes/*.css
+concerto_gui/locale/*/LC_MESSAGES/*.mo
+concerto_gui/siteconfig.py
 
 # tests
 .coverage

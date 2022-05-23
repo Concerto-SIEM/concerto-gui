@@ -4,10 +4,10 @@ include HACKING.README
 include NEWS
 include README
 include INSTALL
-include prewikka.pot
-include conf/prewikka.conf
+include concerto_gui.pot
+include conf/concerto_gui.conf
 include conf/plugins/*.conf
 include conf/menu.yml
 include themes/*.less
-include scripts/prewikka.wsgi
-recursive-include prewikka *
+include scripts/concerto.wsgi
+recursive-include concerto_gui *

@@ -6,7 +6,7 @@ Inc.
 
    Copying and distribution of this file, with or without modification,
 are permitted in any medium without royalty provided the copyright
-notice and this notice are preserved.  This file is offered as-is,
+notice and this notice are preserved. This file is offered as-is,
 without warranty of any kind.
 
 Dependencies
@@ -56,7 +56,7 @@ Basic Installation
 configure, build, and install this package. See the `README' file for
 instructions specific to this package.  Some packages provide this
 `INSTALL' file but do not implement all of the features documented
-below.  The lack of an optional feature in a given package is not
+below. The lack of an optional feature in a given package is not
 necessarily a bug.
 
-Go to https://www.prelude-siem.org/projects/prelude/wiki/InstallingPreludePrewikka for more installation instructions.
+Go to https://concerto-gui.github.io for more installation instructions.

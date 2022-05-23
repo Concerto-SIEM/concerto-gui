@@ -1,4 +1,6 @@
-This directory and its children contain the Prewikka software.
+This directory and its children contain the Concerto GUI software.
+
+Concerto GUI is based on Prewikka.
 
 Changes: if you wish to contribute a change which is a significant one
 in terms of the amount of code changes, please be aware that CS GROUP - France wishes
